@@ -33,33 +33,33 @@
   "obWelcomeTitle": "Bem-vindo ao Companheiro GLP-1",
   "obPrivacyTitle": "Privacidade em primeiro lugar",
   "obPrivacySubtitle": "Controle total dos seus registros",
-  "obPrivacyBody": "Seus dados de saúde são privados e apenas você tem acesso a cada medição e nota registrada.",
-  "obPrivacy1": "Criptografia em repouso e em trânsito",
+  "obPrivacyBody": "Seus dados de saúde são estritamente privados e apenas você tem acesso a cada medição e nota registrada.",
+  "obPrivacy1": "Criptografia segura em repouso e em trânsito",
   "obPrivacy2": "Seus registros nunca são compartilhados ou vendidos",
-  "obPrivacy3": "Exclusão da sua conta e de todos os dados a qualquer momento",
+  "obPrivacy3": "Exclusão simplificada da sua conta a qualquer momento",
   "obConsent": "Autorizo o tratamento dos meus dados de saúde (peso, doses, sintomas e alimentação) exclusivamente para o funcionamento deste diário, conforme a LGPD, e reconheço o aviso de saúde acima.",
-  "obConsentRequired": "Obrigatório para iniciar o diário",
+  "obConsentRequired": "Obrigatório para iniciar o diário protegido",
   "obAboutTitle": "Conte um pouco sobre você",
-  "obAboutSubtitle": "Essas informações aparecem no seu diário e servem de base para sua meta de proteína.",
+  "obAboutSubtitle": "Essas informações nos ajudam a personalizar seus lembretes e metas diárias.",
   "obName": "Nome ou como quer ser chamado(a)",
-  "obNameHint": "Marina",
+  "obNameHint": "Marina Silva",
   "obBirthYear": "Ano de nascimento",
   "obHeight": "Altura",
   "obWeight": "Peso atual",
-  "obPrivacyNote": "Seus dados de saúde são privados. Você pode editá-los ou excluí-los a qualquer momento no Perfil.",
+  "obPrivacyNote": "Seus dados de saúde são privados e criptografados. Você poderá atualizar ou excluir essas informações a qualquer momento no seu Perfil.",
   "obMedTitle": "Qual é a sua medicação?",
-  "obMedSubtitle": "O lembrete semanal segue exatamente o dia e o horário que você escolher.",
+  "obMedSubtitle": "Configuramos os lembretes no dia e na hora exatos da sua aplicação semanal.",
   "obMedLabel": "Medicação prescrita",
   "obDoseLabel": "Dose (como está na sua receita)",
-  "obDoseHint": "Ex: 0,5 mg",
-  "obDoseHelper": "Copie da caneta ou da prescrição médica.",
+  "obDoseHint": "Ex: 0,5 mg ou 2,5 mg",
+  "obDoseHelper": "Verifique na caneta ou prescrição médica.",
   "obWeekdayLabel": "Dia da aplicação semanal",
-  "obTimeLabel": "Horário do lembrete",
+  "obTimeLabel": "Horário preferido para o lembrete",
   "obReminderNote": "Você poderá mudar o dia, o horário e a dose depois, em Doses.",
   "obProteinTitle": "Sua meta de proteína",
-  "obProteinSubtitle": "Sugerimos como ponto de partida 1,2 g por kg de peso. Ajuste como preferir.",
-  "obProteinTarget": "Meta diária",
-  "obProteinRatio": "Aprox. {ratio} g por kg de peso",
+  "obProteinSubtitle": "A ingestão adequada de proteína protege sua massa muscular magra e taxa metabólica durante o tratamento.",
+  "obProteinTarget": "Alvo diário sugerido",
+  "obProteinRatio": "Aprox. {ratio} g por kg de peso corporal",
   "@obProteinRatio": {
     "placeholders": {
       "ratio": {
@@ -119,17 +119,17 @@
     }
   },
   "notifChannel": "Lembrete de aplicação",
-  "dosesTitle": "Rotina de aplicação",
+  "dosesTitle": "Rotina de Aplicação",
   "dosesSubtitle": "Acompanhe seus dias de aplicação e registre cada uma.",
   "nextDose": "Próxima aplicação",
   "reminderOff": "Lembrete desligado",
-  "reminderConfig": "Configuração do lembrete",
-  "reminderExact": "O lembrete toca exatamente no dia e horário escolhidos, toda semana.",
+  "reminderConfig": "Configuração do Lembrete",
+  "reminderExact": "Notificaremos exatamente no dia e horário da aplicação programada.",
   "reminderSaved": "Lembrete atualizado.",
   "doseRegister": "Registrei a aplicação",
-  "doseHistory": "Histórico de aplicações",
+  "doseHistory": "Histórico de Aplicações",
   "doseHistoryEmpty": "Nenhuma aplicação registrada ainda.",
-  "doseSheetTitle": "Registrar aplicação",
+  "doseSheetTitle": "Registrar Aplicação",
   "doseSheetNow": "Registrada agora: {when}",
   "@doseSheetNow": {
     "placeholders": {
@@ -138,10 +138,10 @@
       }
     }
   },
-  "doseField": "Dose (como está na sua receita)",
-  "doseSite": "Local da aplicação (opcional)",
-  "doseNoteHint": "Ex: sem desconforto",
-  "doseConfirm": "Confirmar registro",
+  "doseField": "Dose aplicada",
+  "doseSite": "Local de injeção (opcional)",
+  "doseNoteHint": "Ex: sem desconforto, agulha 4mm, sensação normal...",
+  "doseConfirm": "Confirmar registro da dose",
   "siteAbdomen": "Abdômen",
   "siteThigh": "Coxa",
   "siteArm": "Braço",
@@ -175,7 +175,7 @@
     }
   },
   "proteinWeekly": "Consistência semanal",
-  "proteinWeeklyAvg": "Média de {avg} g/dia • Meta {goal} g",
+  "proteinWeeklyAvg": "Média de {avg} g/dia • Alvo {goal} g",
   "@proteinWeeklyAvg": {
     "placeholders": {
       "avg": {
@@ -187,8 +187,8 @@
     }
   },
   "proteinFoods": "Alimentos",
-  "proteinManual": "Registro manual",
-  "proteinSearch": "Buscar alimento (ex: frango, iogurte)",
+  "proteinManual": "Registro Manual",
+  "proteinSearch": "Buscar alimento (ex: frango, iogurte)...",
   "foodPortion": "{portion} • {g} g proteína",
   "@foodPortion": {
     "placeholders": {
@@ -234,7 +234,7 @@
   },
   "lessPortion": "Menos meia porção",
   "morePortion": "Mais meia porção",
-  "homeProteinTitle": "Meta de proteína",
+  "homeProteinTitle": "Meta de Proteína",
   "homeProteinPct": "{pct}% hoje",
   "@homeProteinPct": {
     "placeholders": {
@@ -253,15 +253,15 @@
   "symDiarrhea": "Diarreia",
   "symReflux": "Refluxo",
   "symFatigue": "Fadiga",
-  "symAppetite": "Falta de apetite",
-  "symHeadache": "Dor de cabeça",
+  "symAppetite": "Sem apetite",
+  "symHeadache": "Cefaleia",
   "symDizziness": "Tontura",
   "sev0": "Nenhum",
   "sev1": "Leve",
   "sev2": "Moderado",
   "sev3": "Forte",
-  "symTitle": "Sintomas e bem-estar",
-  "symSubtitle": "Registre como você se sente e veja padrões ao longo da semana.",
+  "symTitle": "Sintomas e Bem-estar",
+  "symSubtitle": "Identifique padrões e acompanhe a adaptação ao longo do seu ciclo semanal.",
   "symHowNow": "Como você se sente agora?",
   "symIntensity": "Intensidade: {symptom}",
   "@symIntensity": {
@@ -271,14 +271,14 @@
       }
     }
   },
-  "symNoteHint": "Ex: começou após o almoço",
+  "symNoteHint": "Ex: Começou após almoço mais gorduroso...",
   "symSave": "Salvar registro",
-  "symCycleTitle": "Sintomas × dias desde a aplicação",
-  "symCycleSubtitle": "Intensidade média (0 a 3) registrada em cada dia após a última aplicação.",
+  "symCycleTitle": "Padrão no ciclo semanal",
+  "symCycleSubtitle": "Intensidade média que você registrou em cada dia após a aplicação; o destaque mostra o seu pico.",
   "symCycleEmpty": "Registre aplicações e sintomas para ver o gráfico.",
   "symHistory": "Histórico recente",
   "symHistoryEmpty": "Nenhum sintoma registrado.",
-  "symSafety": "Em caso de vômito persistente, dor abdominal intensa ou sintomas que preocupem, procure sua equipe de saúde.",
+  "symSafety": "Sua jornada é única. Em caso de vômito persistente, dor abdominal intensa ou sintomas que causem preocupação, entre em contato imediatamente com sua equipe de saúde.",
   "daysAfterDose": "Dia {n} após a aplicação",
   "@daysAfterDose": {
     "placeholders": {
@@ -295,8 +295,8 @@
       }
     }
   },
-  "weightTitle": "Evolução do peso",
-  "weightCurrent": "Peso atual",
+  "weightTitle": "Evolução do Peso",
+  "weightCurrent": "Peso atual aferido",
   "weightTotal": "{diff} kg total",
   "@weightTotal": {
     "placeholders": {
@@ -314,21 +314,21 @@
     }
   },
   "weightLogToday": "Registrar peso de hoje",
-  "weightEvolution": "Evolução",
-  "weightFluctuation": "Oscilações de 0,5 a 1 kg entre dias são comuns e costumam refletir água e intestino.",
+  "weightEvolution": "Evolução recente",
+  "weightFluctuation": "Oscilações de 500 g a 1 kg entre dias consecutivos costumam vir de água corporal e trânsito intestinal, não de gordura.",
   "weightHistory": "Histórico de pesagens",
   "levelBeginner": "Iniciante",
   "levelIntermediate": "Intermediário",
   "locHome": "Em casa",
   "locGym": "Academia",
   "workoutsTitle": "Preserve sua massa muscular",
-  "workoutsSubtitle": "Treinos de força simples, em casa ou na academia.",
+  "workoutsSubtitle": "Treinos focados em força protegem sua taxa metabólica e sustentam o emagrecimento saudável com GLP-1.",
   "workoutsWeeklyGoal": "Meta semanal de força",
-  "workoutsSessionsDone": "sessões nesta semana",
-  "workoutsGoalOk": "Meta da semana (2 a 3 sessões) alcançada.",
+  "workoutsSessionsDone": "sessões concluídas",
+  "workoutsGoalOk": "Excelente consistência. Mais 1 treino para bater sua meta da semana.",
   "workoutsGoalHint": "Meta: 2 a 3 sessões por semana.",
-  "workoutsWhy": "A perda de peso pode incluir massa muscular. Exercícios de força ajudam a preservá-la. Respeite seus limites e, em caso de dúvida, fale com seu profissional de saúde.",
-  "workoutsTemplates": "Modelos de treino",
+  "workoutsWhy": "A perda de peso rápida pode reduzir massa magra. Exercícios resistidos sinalizam ao corpo para preservar os músculos.",
+  "workoutsTemplates": "Treinos para você",
   "workoutsExerciseCount": "{n} exercícios",
   "@workoutsExerciseCount": {
     "placeholders": {
@@ -348,7 +348,7 @@
       }
     }
   },
-  "workoutsSafety": "Hidrate-se e respeite seus limites de energia durante a atividade.",
+  "workoutsSafety": "Respeite seus limites de energia e hidrate-se com frequência durante a atividade.",
   "sessionTitle": "Treino em andamento",
   "sessionProgress": "{done} de {total} exercícios concluídos",
   "@sessionProgress": {
@@ -372,10 +372,10 @@
       }
     }
   },
-  "sessionSafety": "Sentiu tontura, náusea ou mal-estar? Pare e descanse. Se persistir, procure sua equipe de saúde.",
+  "sessionSafety": "Pare, sente-se e respire com calma. Pausas entre as séries ajudam. Se não melhorar, procure sua equipe de saúde.",
   "sessionFinish": "Finalizar treino",
   "sessionDiscard": "Descartar treino",
-  "homeWorkoutTitle": "Treino sugerido de hoje",
+  "homeWorkoutTitle": "Treino de hoje",
   "homeWorkoutStart": "Começar",
   "settingsProfile": "Seu perfil",
   "settingsGoal": "Meta diária de proteína",
@@ -391,5 +391,312 @@
   "signOut": "Sair",
   "deleteTitle": "Excluir minha conta e todos os meus dados",
   "deleteBody": "Isso apaga permanentemente seu perfil, doses, sintomas, peso, proteína e treinos, além da sua conta. Não é possível desfazer.",
-  "deleteConfirm": "Excluir definitivamente"
+  "deleteConfirm": "Excluir definitivamente",
+  "yesterday": "Ontem",
+  "delete": "Excluir",
+  "note": "Nota",
+  "tip": "Dica",
+  "done": "Concluído",
+  "pending": "Pendente",
+  "showLess": "Mostrar menos",
+  "periodDawn": "Madrugada",
+  "periodMorning": "Manhã",
+  "periodAfternoon": "Tarde",
+  "periodNight": "Noite",
+  "clinicalNoticeTitle": "Aviso clínico importante",
+  "disclaimerA": "Este app é um diário de acompanhamento e ",
+  "disclaimerB": "não substitui",
+  "disclaimerC": " orientação de médico ou nutricionista.",
+  "obWelcomeLabel": "Boas-vindas",
+  "obLgpdBadge": "Seus dados protegidos conforme a LGPD",
+  "obStepByStep": "Passo a passo",
+  "obPersonalCare": "Cuidado personalizado",
+  "obNameCaption": "Para saudarmos você carinhosamente todos os dias",
+  "obYearHint": "Ex: 1990",
+  "obYearInfo": "Ajuda a contextualizar seus registros e metas diárias.",
+  "obCentimeters": "Centímetros",
+  "obKilograms": "Quilogramas",
+  "obAlmostThere": "Quase lá",
+  "obMedHeroTag": "Acompanhamento seguro",
+  "obMedHeroTitle": "Lembrete no seu ritmo",
+  "obMedHeroBody": "Você escolhe o dia e o horário; o app apenas lembra.",
+  "obOncePerWeek": "1x por semana",
+  "obTimeSubtitle": "Lembrete semanal",
+  "obReminderTipTitle": "Tudo ajustável depois",
+  "mealBreakfast": "Café da manhã",
+  "mealLunch": "Almoço",
+  "mealSnack": "Lanche",
+  "mealDinner": "Jantar",
+  "obFinalPhase": "Fase final",
+  "obProteinPhoto": "Nutrição aliada ao seu ritmo metabólico",
+  "obProteinAdjust": "Ajustar gramas",
+  "obComfortTitle": "Conforto gástrico",
+  "obComfortBody": "Dica: fracionar em 3 ou 4 pequenas refeições diárias ajuda a evitar sensação de estômago pesado e náuseas.",
+  "goodMorning": "Bom dia",
+  "goodAfternoon": "Boa tarde",
+  "goodEvening": "Boa noite",
+  "homeCycleDay": "Dia {n} do ciclo semanal",
+  "@homeCycleDay": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "routineReminder": "Lembrete de rotina",
+  "homeProteinSubtitle": "Preservação muscular ativa",
+  "ofGoal": "de {goal} g",
+  "@ofGoal": {
+    "placeholders": {
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
+  "homeProteinLeft": "Restam {g} g",
+  "@homeProteinLeft": {
+    "placeholders": {
+      "g": {
+        "type": "String"
+      }
+    }
+  },
+  "homeProteinTip": "Ideal: fracionar em refeições leves para evitar sensação de peso.",
+  "homeLast7": "Consistência últimos 7 dias",
+  "homeAvg": "Média: {g} g/dia",
+  "@homeAvg": {
+    "placeholders": {
+      "g": {
+        "type": "String"
+      }
+    }
+  },
+  "homeChipSymptom": "+ Sintoma",
+  "homeChipWeight": "+ Peso",
+  "homeChipWorkout": "+ Treino",
+  "homeWorkoutSub": "Força • {level} • {place}",
+  "@homeWorkoutSub": {
+    "placeholders": {
+      "level": {
+        "type": "String"
+      },
+      "place": {
+        "type": "String"
+      }
+    }
+  },
+  "homeWorkoutFocus": "Foco em sustentação muscular",
+  "homeWorkoutFocusSub": "Treinos de força ajudam a preservar a massa magra durante o emagrecimento",
+  "homeFooter": "Diário de acompanhamento. Não substitui orientação de médico ou nutricionista. Em caso de desconforto persistente, contate seu profissional de saúde.",
+  "nextDoseShort": "Próxima dose",
+  "dosesStatusActive": "Ciclo semanal • Lembrete ativo",
+  "dosesStatusOff": "Ciclo semanal • Lembrete desligado",
+  "dosesPreferredDay": "Dia da semana preferido",
+  "daySelected": "{day} selecionado",
+  "@daySelected": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      }
+    }
+  },
+  "dosesAlarmTime": "Horário do alarme",
+  "dosesPrescribed": "Dose na receita",
+  "doseCount": "{n, plural, =0{Nenhuma aplicação registrada} =1{1 aplicação registrada} other{{n} aplicações registradas}}",
+  "@doseCount": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "daysAgo": "Há {n} dias",
+  "@daysAgo": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "doseSheetSub": "Dose prescrita: {dose} • Hoje",
+  "@doseSheetSub": {
+    "placeholders": {
+      "dose": {
+        "type": "String"
+      }
+    }
+  },
+  "siteAbdomenFull": "Abdômen (Esq / Dir)",
+  "siteThighFull": "Coxa (Esq / Dir)",
+  "siteArmFull": "Braço (Posterior)",
+  "siteLastUsed": "Usado na última",
+  "doseWord": "Dose",
+  "proteinTipTitle": "Dica GLP-1",
+  "proteinTipBody": "Distribuir a proteína ao longo das refeições do dia costuma deixar a alimentação mais confortável.",
+  "proteinDaysHit": "{n}/7 dias atingidos",
+  "@proteinDaysHit": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "proteinFrequent": "Frequentes na sua rotina",
+  "proteinResults": "Resultados da busca",
+  "proteinPerPortion": "{g} g proteína",
+  "@proteinPerPortion": {
+    "placeholders": {
+      "g": {
+        "type": "String"
+      }
+    }
+  },
+  "proteinSwipe": "Deslize para excluir",
+  "proteinHydrationTitle": "Hidratação e digestão",
+  "proteinHydrationBody": "Lembre-se de beber água em pequenos goles ao longo do dia para apoiar a digestão e evitar constipação.",
+  "daysAfterDoseWith": "Dia {n} pós-dose ({dose})",
+  "@daysAfterDoseWith": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "dose": {
+        "type": "String"
+      }
+    }
+  },
+  "symNoteLabel": "Nota ou possível gatilho (opcional)",
+  "symWeekN": "Semana {n}",
+  "@symWeekN": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "symCurveLegend": "Intensidade média por dia",
+  "todayDayN": "Hoje: Dia {n}",
+  "@todayDayN": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "symTipTitle": "Leve para sua consulta",
+  "symTipBody": "Este padrão é feito só com os seus registros e pode ajudar seu profissional de saúde a entender sua adaptação.",
+  "symDoseLogged": "Aplicação registrada",
+  "weightTag": "Acompanhamento metabólico",
+  "weightSubtitle": "Registre seu peso e acompanhe a evolução com calma, sem julgamentos.",
+  "weightThisWeek": "Esta semana",
+  "weightLowest": "Menor registro",
+  "weightPaceTitle": "Seu ritmo",
+  "weightPaceBody": "média de {kg} kg/semana desde o primeiro registro.",
+  "@weightPaceBody": {
+    "placeholders": {
+      "kg": {
+        "type": "String"
+      }
+    }
+  },
+  "weightNewLog": "Novo registro",
+  "weightLess": "Menos 100 g",
+  "weightMore": "Mais 100 g",
+  "weightConfirm": "Confirmar aferição",
+  "weightLogsCount": "{n} registros",
+  "@weightLogsCount": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "weightLatest": "Últimos registros",
+  "weightSeeAll": "Ver histórico completo ({n})",
+  "@weightSeeAll": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "leanTitle": "Proteção de massa magra",
+  "leanSubtitle": "Proteína e treino de força",
+  "leanBody": "Durante a perda de peso, proteína suficiente e treinos de força ajudam a preservar os músculos:",
+  "leanProtein": "Ingestão de proteína hoje",
+  "leanWorkouts": "Treinos de força semanais",
+  "leanWorkoutsValue": "{n} de {goal} concluídos",
+  "@leanWorkoutsValue": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "goal": {
+        "type": "int"
+      }
+    }
+  },
+  "leanTip": "Ingerir proteína fracionada em cada refeição ajuda na saciedade e na preservação dos músculos.",
+  "workoutsTag": "Metabolismo ativo",
+  "workoutsThisWeek": "Esta semana",
+  "workoutsGoalFull": "Excelente! Meta da semana (3 sessões) concluída.",
+  "workoutsGoalMissing": "{n, plural, =1{Mais 1 treino para a meta mínima da semana.} other{Mais {n} treinos para a meta mínima da semana.}}",
+  "@workoutsGoalMissing": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "workoutsWhyTitle": "Por que treinar força com GLP-1?",
+  "workoutsTemplatesTag": "4 modelos",
+  "workoutsSuggested": "Sugerido para hoje",
+  "workoutsNoEquipment": "Sem aparelhos",
+  "sessionN": "Sessão {n}",
+  "@sessionN": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "sessionActiveTime": "tempo ativo",
+  "sessionPause": "Pausar cronômetro",
+  "sessionResume": "Retomar",
+  "sessionPauseSession": "Pausar sessão",
+  "sessionWater": "Beba pequenos goles de água entre os movimentos.",
+  "sessionSafetyTitle": "Sentiu tontura ou náusea súbita?",
+  "setOf": "Série {n} de {total}",
+  "@setOf": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "upNext": "A seguir",
+  "repsN": "{reps} repetições",
+  "@repsN": {
+    "placeholders": {
+      "reps": {
+        "type": "String"
+      }
+    }
+  },
+  "current": "(atual)",
+  "setN": "Série {n}",
+  "@setN": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "restLabel": "Descanso entre séries",
+  "restButton": "Descansar 45s",
+  "settingsSubtitle": "Seu perfil, lembretes e privacidade",
+  "deleteSub": "Apaga permanentemente tudo, inclusive a conta"
 }

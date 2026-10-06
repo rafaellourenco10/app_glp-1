@@ -34,11 +34,11 @@ void main() {
     await next();
     await next();
 
-    expect(find.text('Olá, Ana'), findsOneWidget);
+    expect(find.textContaining(', Ana'), findsOneWidget);
     expect(find.text('Próxima aplicação'), findsOneWidget);
 
     for (final tab in ['Proteína', 'Sintomas', 'Treinos', 'Perfil', 'Hoje']) {
-      await tester.tap(find.descendant(of: find.byType(NavigationBar), matching: find.text(tab)));
+      await tester.tap(find.text(tab).last);
       await tester.pumpAndSettle();
     }
     expect(tester.takeException(), isNull);

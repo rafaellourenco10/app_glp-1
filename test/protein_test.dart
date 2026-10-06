@@ -68,7 +68,7 @@ void main() {
     expect(total('3 itens • 47 g'), findsOneWidget);
 
     // Lançamento manual: 30 g.
-    await tester.tap(find.text('Registro manual'));
+    await tester.tap(find.text('Registro Manual'));
     await tester.pumpAndSettle();
     await tester.enterText(find.byKey(const ValueKey('protein_manual_label')), 'Frango');
     await tester.enterText(find.byKey(const ValueKey('protein_manual_grams')), '30');

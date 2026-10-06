@@ -1,5 +1,6 @@
 import 'package:companheiro_glp1/features/doses/doses_repository.dart';
 import 'package:companheiro_glp1/features/doses/doses_screen.dart';
+import 'package:companheiro_glp1/features/onboarding/onboarding_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -32,17 +33,20 @@ class FakeDosesRepository extends DosesRepository {
 void main() {
   testWidgets('registrar aplicação cria dose_log e aparece no histórico', (tester) async {
     final repo = FakeDosesRepository();
-    await pumpScreen(tester, const DosesScreen(), overrides: [dosesRepositoryProvider.overrideWithValue(repo)]);
+    await pumpScreen(tester, const DosesScreen(), overrides: [
+      dosesRepositoryProvider.overrideWithValue(repo),
+      profileProvider.overrideWith((ref) async => Profile(name: 'Marina', proteinGoalG: 100)),
+    ]);
 
     expect(find.text('Nenhuma aplicação registrada ainda.'), findsOneWidget);
-    expect(find.text('Domingo, às 20:00'), findsOneWidget);
+    expect(find.textContaining('(Domingo, 20:00)'), findsOneWidget);
 
     await tester.tap(find.byKey(const ValueKey('dose_register')));
     await tester.pumpAndSettle();
 
     // Dose vem preenchida do agendamento (texto livre, editável).
     expect(tester.widget<TextField>(find.byKey(const ValueKey('dose_label'))).controller!.text, '0,5 mg');
-    await tester.tap(find.text('Coxa'));
+    await tester.tap(find.text('Coxa (Esq / Dir)'));
     await tester.enterText(find.byKey(const ValueKey('dose_note')), 'sem desconforto');
     await tester.tap(find.byKey(const ValueKey('dose_confirm')));
     await tester.pumpAndSettle();
@@ -55,6 +59,6 @@ void main() {
 
     // Histórico atualizado.
     expect(find.text('Nenhuma aplicação registrada ainda.'), findsNothing);
-    expect(find.text('"sem desconforto"'), findsOneWidget);
+    expect(find.text('“sem desconforto”'), findsOneWidget);
   });
 }

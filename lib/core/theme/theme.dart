@@ -12,17 +12,22 @@ const _light = ColorScheme(
   primaryFixed: Color(0xFF9CF2E8),
   primaryFixedDim: Color(0xFF80D5CB),
   onPrimaryFixed: Color(0xFF00201D),
+  onPrimaryFixedVariant: Color(0xFF00504A),
   secondary: Color(0xFF006B5F),
   onSecondary: Colors.white,
   secondaryContainer: Color(0xFF6DF5E1),
   onSecondaryContainer: Color(0xFF00504A),
   secondaryFixed: Color(0xFF71F8E4),
+  secondaryFixedDim: Color(0xFF4FDBC8),
+  onSecondaryFixedVariant: Color(0xFF005048),
   onSecondaryFixed: Color(0xFF00201C),
   tertiary: Color(0xFF913200),
   onTertiary: Colors.white,
   tertiaryContainer: Color(0xFFB94200),
   onTertiaryContainer: Color(0xFFFFE5DC),
   tertiaryFixed: Color(0xFFFFDBCE),
+  tertiaryFixedDim: Color(0xFFFFB599),
+  onTertiaryFixed: Color(0xFF370E00),
   onTertiaryFixedVariant: Color(0xFF7F2B00),
   error: Color(0xFFBA1A1A),
   onError: Colors.white,
@@ -49,22 +54,37 @@ const _light = ColorScheme(
 final lightTheme = _build(_light);
 final darkTheme = _build(ColorScheme.fromSeed(seedColor: _seed, brightness: Brightness.dark));
 
+/// Escala tipográfica do DESIGN.md (Tailwind do Stitch). letterSpacing em px = em × fontSize.
+///  displaySmall=display-lg · displayMedium=metric-display · headlineLarge=headline-lg · headlineSmall=headline-sm
+///  titleMedium=title-md · titleSmall=metric-label · bodyLarge=body-lg · bodyMedium=body-md
+///  labelMedium=label-md · labelSmall=label-sm
 ThemeData _build(ColorScheme c) {
   const f = 'Manrope';
-  final text = TextTheme(
-    displayMedium: const TextStyle(fontSize: 38, height: 44 / 38, fontWeight: FontWeight.w700, letterSpacing: -1.1),
-    headlineLarge: const TextStyle(fontSize: 26, height: 32 / 26, fontWeight: FontWeight.w600, letterSpacing: -0.4),
-    headlineSmall: const TextStyle(fontSize: 20, height: 26 / 20, fontWeight: FontWeight.w600, letterSpacing: -0.2),
-    titleMedium: const TextStyle(fontSize: 17, height: 24 / 17, fontWeight: FontWeight.w600),
-    bodyLarge: const TextStyle(fontSize: 16, height: 24 / 16),
-    bodyMedium: const TextStyle(fontSize: 14, height: 20 / 14),
-    labelLarge: const TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
-    labelMedium: const TextStyle(fontSize: 13, height: 18 / 13, fontWeight: FontWeight.w500),
-    labelSmall: const TextStyle(fontSize: 11, height: 14 / 11, fontWeight: FontWeight.w600, letterSpacing: 0.2),
+  final text = const TextTheme(
+    displaySmall: TextStyle(fontSize: 34, height: 40 / 34, fontWeight: FontWeight.w700, letterSpacing: -0.68),
+    displayMedium: TextStyle(fontSize: 38, height: 44 / 38, fontWeight: FontWeight.w700, letterSpacing: -1.14),
+    headlineLarge: TextStyle(fontSize: 26, height: 32 / 26, fontWeight: FontWeight.w600, letterSpacing: -0.39),
+    headlineSmall: TextStyle(fontSize: 20, height: 26 / 20, fontWeight: FontWeight.w600, letterSpacing: -0.2),
+    titleMedium: TextStyle(fontSize: 17, height: 24 / 17, fontWeight: FontWeight.w600),
+    titleSmall: TextStyle(fontSize: 13, height: 18 / 13, fontWeight: FontWeight.w600, letterSpacing: 0.52),
+    bodyLarge: TextStyle(fontSize: 16, height: 24 / 16, fontWeight: FontWeight.w400),
+    bodyMedium: TextStyle(fontSize: 14, height: 20 / 14, fontWeight: FontWeight.w400),
+    labelLarge: TextStyle(fontSize: 17, height: 24 / 17, fontWeight: FontWeight.w600),
+    labelMedium: TextStyle(fontSize: 13, height: 18 / 13, fontWeight: FontWeight.w500),
+    labelSmall: TextStyle(fontSize: 11, height: 14 / 11, fontWeight: FontWeight.w600, letterSpacing: 0.22),
   ).apply(fontFamily: f, bodyColor: c.onSurface, displayColor: c.onSurface);
 
-  final pill = WidgetStatePropertyAll<OutlinedBorder>(const StadiumBorder());
-  const minSize = WidgetStatePropertyAll(Size(48, 52));
+  // Botões: h-[52px], rounded-full, title-md.
+  ButtonStyle pill(Color bg, Color fg) => ButtonStyle(
+        backgroundColor: WidgetStateProperty.resolveWith((s) => s.contains(WidgetState.disabled) ? bg.withValues(alpha: 0.4) : bg),
+        foregroundColor: WidgetStateProperty.resolveWith((s) => s.contains(WidgetState.disabled) ? fg.withValues(alpha: 0.8) : fg),
+        shape: const WidgetStatePropertyAll(StadiumBorder()),
+        minimumSize: const WidgetStatePropertyAll(Size(48, 52)),
+        elevation: const WidgetStatePropertyAll(0),
+        textStyle: WidgetStatePropertyAll(text.titleMedium),
+        iconSize: const WidgetStatePropertyAll(20),
+      );
+  final none = OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none);
 
   return ThemeData(
     useMaterial3: true,
@@ -73,50 +93,66 @@ ThemeData _build(ColorScheme c) {
     textTheme: text,
     scaffoldBackgroundColor: c.surface,
     appBarTheme: AppBarTheme(
-      backgroundColor: c.surface,
+      backgroundColor: c.surface.withValues(alpha: 0.85),
       surfaceTintColor: Colors.transparent,
       titleTextStyle: text.titleMedium,
+      toolbarHeight: 64,
       centerTitle: false,
     ),
     cardTheme: CardThemeData(
       color: c.surfaceContainerLowest,
       elevation: 0,
       margin: EdgeInsets.zero,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20),
-        side: BorderSide(color: c.primary.withValues(alpha: 0.08)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+    ),
+    filledButtonTheme: FilledButtonThemeData(style: pill(c.primary, c.onPrimary)),
+    outlinedButtonTheme: OutlinedButtonThemeData(
+      style: pill(c.surfaceContainer, c.primary).copyWith(side: const WidgetStatePropertyAll(BorderSide.none)),
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: ButtonStyle(
+        minimumSize: const WidgetStatePropertyAll(Size(48, 48)),
+        textStyle: WidgetStatePropertyAll(text.labelMedium!.copyWith(fontWeight: FontWeight.w600)),
       ),
     ),
-    filledButtonTheme: FilledButtonThemeData(
-      style: ButtonStyle(shape: pill, minimumSize: minSize, textStyle: WidgetStatePropertyAll(text.titleMedium)),
-    ),
-    outlinedButtonTheme: OutlinedButtonThemeData(
-      style: ButtonStyle(shape: pill, minimumSize: minSize, textStyle: WidgetStatePropertyAll(text.titleMedium)),
-    ),
-    textButtonTheme: TextButtonThemeData(style: ButtonStyle(minimumSize: const WidgetStatePropertyAll(Size(48, 48)))),
+    // Inputs: h-[52px], rounded-2xl, bg surface-container-low, sem borda; foco = bg surface-container.
     inputDecorationTheme: InputDecorationTheme(
       filled: true,
       fillColor: c.surfaceContainerLow,
-      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-      border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none),
+      hintStyle: text.bodyLarge!.copyWith(color: c.outline.withValues(alpha: 0.7)),
+      contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+      border: none,
+      enabledBorder: none,
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(16),
         borderSide: BorderSide(color: c.primary, width: 1.5),
       ),
     ),
-    chipTheme: ChipThemeData(
-      shape: StadiumBorder(side: BorderSide(color: c.outline.withValues(alpha: 0.3))),
-      selectedColor: c.primary,
+    switchTheme: SwitchThemeData(
+      trackOutlineColor: const WidgetStatePropertyAll(Colors.transparent),
+      thumbColor: const WidgetStatePropertyAll(Colors.white),
+      trackColor: WidgetStateProperty.resolveWith((s) => s.contains(WidgetState.selected) ? c.primary : c.surfaceContainerHighest),
+    ),
+    checkboxTheme: CheckboxThemeData(
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+      side: BorderSide.none,
+      fillColor: WidgetStateProperty.resolveWith((s) => s.contains(WidgetState.selected) ? c.primaryContainer : c.surfaceContainerHigh),
+    ),
+    progressIndicatorTheme: ProgressIndicatorThemeData(
+      color: c.primaryContainer,
+      linearTrackColor: c.surfaceContainer,
+      circularTrackColor: c.surfaceContainer,
+    ),
+    bottomSheetTheme: BottomSheetThemeData(
       backgroundColor: c.surfaceContainerLowest,
-      labelStyle: WidgetStateTextStyle.resolveWith(
-        (s) => text.labelMedium!.copyWith(color: s.contains(WidgetState.selected) ? c.onPrimary : c.onSurfaceVariant),
-      ),
-      showCheckmark: false,
+      dragHandleColor: c.surfaceContainerHighest,
+      dragHandleSize: const Size(48, 6),
+      shape: const RoundedRectangleBorder(borderRadius: BorderRadius.vertical(top: Radius.circular(28))),
     ),
-    navigationBarTheme: NavigationBarThemeData(
-      backgroundColor: c.surface,
-      indicatorColor: c.secondaryContainer.withValues(alpha: 0.5),
-      labelTextStyle: WidgetStatePropertyAll(text.labelSmall),
+    dialogTheme: DialogThemeData(
+      backgroundColor: c.surfaceContainerLowest,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
     ),
+    snackBarTheme: const SnackBarThemeData(behavior: SnackBarBehavior.floating),
   );
 }

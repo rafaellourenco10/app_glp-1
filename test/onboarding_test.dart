@@ -21,7 +21,8 @@ void main() {
     await pumpScreen(tester, const OnboardingScreen(),
         overrides: [onboardingRepositoryProvider.overrideWithValue(repo)]);
 
-    FilledButton continueBtn() => tester.widget<FilledButton>(find.byKey(const ValueKey('ob_continue')));
+    FilledButton continueBtn() =>
+        tester.widget<FilledButton>(find.descendant(of: find.byKey(const ValueKey('ob_continue')), matching: find.byType(FilledButton)));
     Future<void> next() async {
       await tester.tap(find.byKey(const ValueKey('ob_continue')));
       await tester.pumpAndSettle();
@@ -47,7 +48,7 @@ void main() {
     // Etapa 3: medicação, dose em texto livre, dia e horário.
     await tester.tap(find.byKey(const ValueKey('ob_med')));
     await tester.pumpAndSettle();
-    await tester.tap(find.text('Mounjaro').last);
+    await tester.tap(find.text('Mounjaro (Tirzepatida)').last);
     await tester.pumpAndSettle();
     await tester.enterText(find.byKey(const ValueKey('ob_dose')), '2,5 mg');
     await tester.tap(find.text('Qua'));
@@ -55,7 +56,7 @@ void main() {
     await next();
 
     // Etapa 4: 80 kg × 1,2 = 96 g, editável em passos de 5 g.
-    expect(find.text('Valor de referência, converse com seu profissional de saúde.'), findsOneWidget);
+    expect(find.textContaining('Valor de referência, converse com seu profissional de saúde.'), findsOneWidget);
     expect(find.textContaining('96'), findsWidgets);
     await tester.tap(find.byTooltip('Aumentar 5 g'));
     await tester.pump();

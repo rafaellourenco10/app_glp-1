@@ -253,13 +253,13 @@ abstract class AppLocalizations {
   /// No description provided for @obPrivacyBody.
   ///
   /// In pt, this message translates to:
-  /// **'Seus dados de saúde são privados e apenas você tem acesso a cada medição e nota registrada.'**
+  /// **'Seus dados de saúde são estritamente privados e apenas você tem acesso a cada medição e nota registrada.'**
   String get obPrivacyBody;
 
   /// No description provided for @obPrivacy1.
   ///
   /// In pt, this message translates to:
-  /// **'Criptografia em repouso e em trânsito'**
+  /// **'Criptografia segura em repouso e em trânsito'**
   String get obPrivacy1;
 
   /// No description provided for @obPrivacy2.
@@ -271,7 +271,7 @@ abstract class AppLocalizations {
   /// No description provided for @obPrivacy3.
   ///
   /// In pt, this message translates to:
-  /// **'Exclusão da sua conta e de todos os dados a qualquer momento'**
+  /// **'Exclusão simplificada da sua conta a qualquer momento'**
   String get obPrivacy3;
 
   /// No description provided for @obConsent.
@@ -283,7 +283,7 @@ abstract class AppLocalizations {
   /// No description provided for @obConsentRequired.
   ///
   /// In pt, this message translates to:
-  /// **'Obrigatório para iniciar o diário'**
+  /// **'Obrigatório para iniciar o diário protegido'**
   String get obConsentRequired;
 
   /// No description provided for @obAboutTitle.
@@ -295,7 +295,7 @@ abstract class AppLocalizations {
   /// No description provided for @obAboutSubtitle.
   ///
   /// In pt, this message translates to:
-  /// **'Essas informações aparecem no seu diário e servem de base para sua meta de proteína.'**
+  /// **'Essas informações nos ajudam a personalizar seus lembretes e metas diárias.'**
   String get obAboutSubtitle;
 
   /// No description provided for @obName.
@@ -307,7 +307,7 @@ abstract class AppLocalizations {
   /// No description provided for @obNameHint.
   ///
   /// In pt, this message translates to:
-  /// **'Marina'**
+  /// **'Marina Silva'**
   String get obNameHint;
 
   /// No description provided for @obBirthYear.
@@ -331,7 +331,7 @@ abstract class AppLocalizations {
   /// No description provided for @obPrivacyNote.
   ///
   /// In pt, this message translates to:
-  /// **'Seus dados de saúde são privados. Você pode editá-los ou excluí-los a qualquer momento no Perfil.'**
+  /// **'Seus dados de saúde são privados e criptografados. Você poderá atualizar ou excluir essas informações a qualquer momento no seu Perfil.'**
   String get obPrivacyNote;
 
   /// No description provided for @obMedTitle.
@@ -343,7 +343,7 @@ abstract class AppLocalizations {
   /// No description provided for @obMedSubtitle.
   ///
   /// In pt, this message translates to:
-  /// **'O lembrete semanal segue exatamente o dia e o horário que você escolher.'**
+  /// **'Configuramos os lembretes no dia e na hora exatos da sua aplicação semanal.'**
   String get obMedSubtitle;
 
   /// No description provided for @obMedLabel.
@@ -361,13 +361,13 @@ abstract class AppLocalizations {
   /// No description provided for @obDoseHint.
   ///
   /// In pt, this message translates to:
-  /// **'Ex: 0,5 mg'**
+  /// **'Ex: 0,5 mg ou 2,5 mg'**
   String get obDoseHint;
 
   /// No description provided for @obDoseHelper.
   ///
   /// In pt, this message translates to:
-  /// **'Copie da caneta ou da prescrição médica.'**
+  /// **'Verifique na caneta ou prescrição médica.'**
   String get obDoseHelper;
 
   /// No description provided for @obWeekdayLabel.
@@ -379,7 +379,7 @@ abstract class AppLocalizations {
   /// No description provided for @obTimeLabel.
   ///
   /// In pt, this message translates to:
-  /// **'Horário do lembrete'**
+  /// **'Horário preferido para o lembrete'**
   String get obTimeLabel;
 
   /// No description provided for @obReminderNote.
@@ -397,19 +397,19 @@ abstract class AppLocalizations {
   /// No description provided for @obProteinSubtitle.
   ///
   /// In pt, this message translates to:
-  /// **'Sugerimos como ponto de partida 1,2 g por kg de peso. Ajuste como preferir.'**
+  /// **'A ingestão adequada de proteína protege sua massa muscular magra e taxa metabólica durante o tratamento.'**
   String get obProteinSubtitle;
 
   /// No description provided for @obProteinTarget.
   ///
   /// In pt, this message translates to:
-  /// **'Meta diária'**
+  /// **'Alvo diário sugerido'**
   String get obProteinTarget;
 
   /// No description provided for @obProteinRatio.
   ///
   /// In pt, this message translates to:
-  /// **'Aprox. {ratio} g por kg de peso'**
+  /// **'Aprox. {ratio} g por kg de peso corporal'**
   String obProteinRatio(String ratio);
 
   /// No description provided for @obProteinStep.
@@ -523,7 +523,7 @@ abstract class AppLocalizations {
   /// No description provided for @dosesTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Rotina de aplicação'**
+  /// **'Rotina de Aplicação'**
   String get dosesTitle;
 
   /// No description provided for @dosesSubtitle.
@@ -547,13 +547,13 @@ abstract class AppLocalizations {
   /// No description provided for @reminderConfig.
   ///
   /// In pt, this message translates to:
-  /// **'Configuração do lembrete'**
+  /// **'Configuração do Lembrete'**
   String get reminderConfig;
 
   /// No description provided for @reminderExact.
   ///
   /// In pt, this message translates to:
-  /// **'O lembrete toca exatamente no dia e horário escolhidos, toda semana.'**
+  /// **'Notificaremos exatamente no dia e horário da aplicação programada.'**
   String get reminderExact;
 
   /// No description provided for @reminderSaved.
@@ -571,7 +571,7 @@ abstract class AppLocalizations {
   /// No description provided for @doseHistory.
   ///
   /// In pt, this message translates to:
-  /// **'Histórico de aplicações'**
+  /// **'Histórico de Aplicações'**
   String get doseHistory;
 
   /// No description provided for @doseHistoryEmpty.
@@ -583,7 +583,7 @@ abstract class AppLocalizations {
   /// No description provided for @doseSheetTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Registrar aplicação'**
+  /// **'Registrar Aplicação'**
   String get doseSheetTitle;
 
   /// No description provided for @doseSheetNow.
@@ -595,25 +595,25 @@ abstract class AppLocalizations {
   /// No description provided for @doseField.
   ///
   /// In pt, this message translates to:
-  /// **'Dose (como está na sua receita)'**
+  /// **'Dose aplicada'**
   String get doseField;
 
   /// No description provided for @doseSite.
   ///
   /// In pt, this message translates to:
-  /// **'Local da aplicação (opcional)'**
+  /// **'Local de injeção (opcional)'**
   String get doseSite;
 
   /// No description provided for @doseNoteHint.
   ///
   /// In pt, this message translates to:
-  /// **'Ex: sem desconforto'**
+  /// **'Ex: sem desconforto, agulha 4mm, sensação normal...'**
   String get doseNoteHint;
 
   /// No description provided for @doseConfirm.
   ///
   /// In pt, this message translates to:
-  /// **'Confirmar registro'**
+  /// **'Confirmar registro da dose'**
   String get doseConfirm;
 
   /// No description provided for @siteAbdomen.
@@ -673,7 +673,7 @@ abstract class AppLocalizations {
   /// No description provided for @proteinWeeklyAvg.
   ///
   /// In pt, this message translates to:
-  /// **'Média de {avg} g/dia • Meta {goal} g'**
+  /// **'Média de {avg} g/dia • Alvo {goal} g'**
   String proteinWeeklyAvg(String avg, String goal);
 
   /// No description provided for @proteinFoods.
@@ -685,13 +685,13 @@ abstract class AppLocalizations {
   /// No description provided for @proteinManual.
   ///
   /// In pt, this message translates to:
-  /// **'Registro manual'**
+  /// **'Registro Manual'**
   String get proteinManual;
 
   /// No description provided for @proteinSearch.
   ///
   /// In pt, this message translates to:
-  /// **'Buscar alimento (ex: frango, iogurte)'**
+  /// **'Buscar alimento (ex: frango, iogurte)...'**
   String get proteinSearch;
 
   /// No description provided for @foodPortion.
@@ -763,7 +763,7 @@ abstract class AppLocalizations {
   /// No description provided for @homeProteinTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Meta de proteína'**
+  /// **'Meta de Proteína'**
   String get homeProteinTitle;
 
   /// No description provided for @homeProteinPct.
@@ -835,13 +835,13 @@ abstract class AppLocalizations {
   /// No description provided for @symAppetite.
   ///
   /// In pt, this message translates to:
-  /// **'Falta de apetite'**
+  /// **'Sem apetite'**
   String get symAppetite;
 
   /// No description provided for @symHeadache.
   ///
   /// In pt, this message translates to:
-  /// **'Dor de cabeça'**
+  /// **'Cefaleia'**
   String get symHeadache;
 
   /// No description provided for @symDizziness.
@@ -877,13 +877,13 @@ abstract class AppLocalizations {
   /// No description provided for @symTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Sintomas e bem-estar'**
+  /// **'Sintomas e Bem-estar'**
   String get symTitle;
 
   /// No description provided for @symSubtitle.
   ///
   /// In pt, this message translates to:
-  /// **'Registre como você se sente e veja padrões ao longo da semana.'**
+  /// **'Identifique padrões e acompanhe a adaptação ao longo do seu ciclo semanal.'**
   String get symSubtitle;
 
   /// No description provided for @symHowNow.
@@ -901,7 +901,7 @@ abstract class AppLocalizations {
   /// No description provided for @symNoteHint.
   ///
   /// In pt, this message translates to:
-  /// **'Ex: começou após o almoço'**
+  /// **'Ex: Começou após almoço mais gorduroso...'**
   String get symNoteHint;
 
   /// No description provided for @symSave.
@@ -913,13 +913,13 @@ abstract class AppLocalizations {
   /// No description provided for @symCycleTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Sintomas × dias desde a aplicação'**
+  /// **'Padrão no ciclo semanal'**
   String get symCycleTitle;
 
   /// No description provided for @symCycleSubtitle.
   ///
   /// In pt, this message translates to:
-  /// **'Intensidade média (0 a 3) registrada em cada dia após a última aplicação.'**
+  /// **'Intensidade média que você registrou em cada dia após a aplicação; o destaque mostra o seu pico.'**
   String get symCycleSubtitle;
 
   /// No description provided for @symCycleEmpty.
@@ -943,7 +943,7 @@ abstract class AppLocalizations {
   /// No description provided for @symSafety.
   ///
   /// In pt, this message translates to:
-  /// **'Em caso de vômito persistente, dor abdominal intensa ou sintomas que preocupem, procure sua equipe de saúde.'**
+  /// **'Sua jornada é única. Em caso de vômito persistente, dor abdominal intensa ou sintomas que causem preocupação, entre em contato imediatamente com sua equipe de saúde.'**
   String get symSafety;
 
   /// No description provided for @daysAfterDose.
@@ -961,13 +961,13 @@ abstract class AppLocalizations {
   /// No description provided for @weightTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Evolução do peso'**
+  /// **'Evolução do Peso'**
   String get weightTitle;
 
   /// No description provided for @weightCurrent.
   ///
   /// In pt, this message translates to:
-  /// **'Peso atual'**
+  /// **'Peso atual aferido'**
   String get weightCurrent;
 
   /// No description provided for @weightTotal.
@@ -991,13 +991,13 @@ abstract class AppLocalizations {
   /// No description provided for @weightEvolution.
   ///
   /// In pt, this message translates to:
-  /// **'Evolução'**
+  /// **'Evolução recente'**
   String get weightEvolution;
 
   /// No description provided for @weightFluctuation.
   ///
   /// In pt, this message translates to:
-  /// **'Oscilações de 0,5 a 1 kg entre dias são comuns e costumam refletir água e intestino.'**
+  /// **'Oscilações de 500 g a 1 kg entre dias consecutivos costumam vir de água corporal e trânsito intestinal, não de gordura.'**
   String get weightFluctuation;
 
   /// No description provided for @weightHistory.
@@ -1039,7 +1039,7 @@ abstract class AppLocalizations {
   /// No description provided for @workoutsSubtitle.
   ///
   /// In pt, this message translates to:
-  /// **'Treinos de força simples, em casa ou na academia.'**
+  /// **'Treinos focados em força protegem sua taxa metabólica e sustentam o emagrecimento saudável com GLP-1.'**
   String get workoutsSubtitle;
 
   /// No description provided for @workoutsWeeklyGoal.
@@ -1051,13 +1051,13 @@ abstract class AppLocalizations {
   /// No description provided for @workoutsSessionsDone.
   ///
   /// In pt, this message translates to:
-  /// **'sessões nesta semana'**
+  /// **'sessões concluídas'**
   String get workoutsSessionsDone;
 
   /// No description provided for @workoutsGoalOk.
   ///
   /// In pt, this message translates to:
-  /// **'Meta da semana (2 a 3 sessões) alcançada.'**
+  /// **'Excelente consistência. Mais 1 treino para bater sua meta da semana.'**
   String get workoutsGoalOk;
 
   /// No description provided for @workoutsGoalHint.
@@ -1069,13 +1069,13 @@ abstract class AppLocalizations {
   /// No description provided for @workoutsWhy.
   ///
   /// In pt, this message translates to:
-  /// **'A perda de peso pode incluir massa muscular. Exercícios de força ajudam a preservá-la. Respeite seus limites e, em caso de dúvida, fale com seu profissional de saúde.'**
+  /// **'A perda de peso rápida pode reduzir massa magra. Exercícios resistidos sinalizam ao corpo para preservar os músculos.'**
   String get workoutsWhy;
 
   /// No description provided for @workoutsTemplates.
   ///
   /// In pt, this message translates to:
-  /// **'Modelos de treino'**
+  /// **'Treinos para você'**
   String get workoutsTemplates;
 
   /// No description provided for @workoutsExerciseCount.
@@ -1111,7 +1111,7 @@ abstract class AppLocalizations {
   /// No description provided for @workoutsSafety.
   ///
   /// In pt, this message translates to:
-  /// **'Hidrate-se e respeite seus limites de energia durante a atividade.'**
+  /// **'Respeite seus limites de energia e hidrate-se com frequência durante a atividade.'**
   String get workoutsSafety;
 
   /// No description provided for @sessionTitle.
@@ -1135,7 +1135,7 @@ abstract class AppLocalizations {
   /// No description provided for @sessionSafety.
   ///
   /// In pt, this message translates to:
-  /// **'Sentiu tontura, náusea ou mal-estar? Pare e descanse. Se persistir, procure sua equipe de saúde.'**
+  /// **'Pare, sente-se e respire com calma. Pausas entre as séries ajudam. Se não melhorar, procure sua equipe de saúde.'**
   String get sessionSafety;
 
   /// No description provided for @sessionFinish.
@@ -1153,7 +1153,7 @@ abstract class AppLocalizations {
   /// No description provided for @homeWorkoutTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Treino sugerido de hoje'**
+  /// **'Treino de hoje'**
   String get homeWorkoutTitle;
 
   /// No description provided for @homeWorkoutStart.
@@ -1251,6 +1251,810 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Excluir definitivamente'**
   String get deleteConfirm;
+
+  /// No description provided for @yesterday.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ontem'**
+  String get yesterday;
+
+  /// No description provided for @delete.
+  ///
+  /// In pt, this message translates to:
+  /// **'Excluir'**
+  String get delete;
+
+  /// No description provided for @note.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nota'**
+  String get note;
+
+  /// No description provided for @tip.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dica'**
+  String get tip;
+
+  /// No description provided for @done.
+  ///
+  /// In pt, this message translates to:
+  /// **'Concluído'**
+  String get done;
+
+  /// No description provided for @pending.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pendente'**
+  String get pending;
+
+  /// No description provided for @showLess.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mostrar menos'**
+  String get showLess;
+
+  /// No description provided for @periodDawn.
+  ///
+  /// In pt, this message translates to:
+  /// **'Madrugada'**
+  String get periodDawn;
+
+  /// No description provided for @periodMorning.
+  ///
+  /// In pt, this message translates to:
+  /// **'Manhã'**
+  String get periodMorning;
+
+  /// No description provided for @periodAfternoon.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tarde'**
+  String get periodAfternoon;
+
+  /// No description provided for @periodNight.
+  ///
+  /// In pt, this message translates to:
+  /// **'Noite'**
+  String get periodNight;
+
+  /// No description provided for @clinicalNoticeTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Aviso clínico importante'**
+  String get clinicalNoticeTitle;
+
+  /// No description provided for @disclaimerA.
+  ///
+  /// In pt, this message translates to:
+  /// **'Este app é um diário de acompanhamento e '**
+  String get disclaimerA;
+
+  /// No description provided for @disclaimerB.
+  ///
+  /// In pt, this message translates to:
+  /// **'não substitui'**
+  String get disclaimerB;
+
+  /// No description provided for @disclaimerC.
+  ///
+  /// In pt, this message translates to:
+  /// **' orientação de médico ou nutricionista.'**
+  String get disclaimerC;
+
+  /// No description provided for @obWelcomeLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Boas-vindas'**
+  String get obWelcomeLabel;
+
+  /// No description provided for @obLgpdBadge.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seus dados protegidos conforme a LGPD'**
+  String get obLgpdBadge;
+
+  /// No description provided for @obStepByStep.
+  ///
+  /// In pt, this message translates to:
+  /// **'Passo a passo'**
+  String get obStepByStep;
+
+  /// No description provided for @obPersonalCare.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cuidado personalizado'**
+  String get obPersonalCare;
+
+  /// No description provided for @obNameCaption.
+  ///
+  /// In pt, this message translates to:
+  /// **'Para saudarmos você carinhosamente todos os dias'**
+  String get obNameCaption;
+
+  /// No description provided for @obYearHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ex: 1990'**
+  String get obYearHint;
+
+  /// No description provided for @obYearInfo.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ajuda a contextualizar seus registros e metas diárias.'**
+  String get obYearInfo;
+
+  /// No description provided for @obCentimeters.
+  ///
+  /// In pt, this message translates to:
+  /// **'Centímetros'**
+  String get obCentimeters;
+
+  /// No description provided for @obKilograms.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quilogramas'**
+  String get obKilograms;
+
+  /// No description provided for @obAlmostThere.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quase lá'**
+  String get obAlmostThere;
+
+  /// No description provided for @obMedHeroTag.
+  ///
+  /// In pt, this message translates to:
+  /// **'Acompanhamento seguro'**
+  String get obMedHeroTag;
+
+  /// No description provided for @obMedHeroTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Lembrete no seu ritmo'**
+  String get obMedHeroTitle;
+
+  /// No description provided for @obMedHeroBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você escolhe o dia e o horário; o app apenas lembra.'**
+  String get obMedHeroBody;
+
+  /// No description provided for @obOncePerWeek.
+  ///
+  /// In pt, this message translates to:
+  /// **'1x por semana'**
+  String get obOncePerWeek;
+
+  /// No description provided for @obTimeSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Lembrete semanal'**
+  String get obTimeSubtitle;
+
+  /// No description provided for @obReminderTipTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tudo ajustável depois'**
+  String get obReminderTipTitle;
+
+  /// No description provided for @mealBreakfast.
+  ///
+  /// In pt, this message translates to:
+  /// **'Café da manhã'**
+  String get mealBreakfast;
+
+  /// No description provided for @mealLunch.
+  ///
+  /// In pt, this message translates to:
+  /// **'Almoço'**
+  String get mealLunch;
+
+  /// No description provided for @mealSnack.
+  ///
+  /// In pt, this message translates to:
+  /// **'Lanche'**
+  String get mealSnack;
+
+  /// No description provided for @mealDinner.
+  ///
+  /// In pt, this message translates to:
+  /// **'Jantar'**
+  String get mealDinner;
+
+  /// No description provided for @obFinalPhase.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fase final'**
+  String get obFinalPhase;
+
+  /// No description provided for @obProteinPhoto.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nutrição aliada ao seu ritmo metabólico'**
+  String get obProteinPhoto;
+
+  /// No description provided for @obProteinAdjust.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ajustar gramas'**
+  String get obProteinAdjust;
+
+  /// No description provided for @obComfortTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conforto gástrico'**
+  String get obComfortTitle;
+
+  /// No description provided for @obComfortBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dica: fracionar em 3 ou 4 pequenas refeições diárias ajuda a evitar sensação de estômago pesado e náuseas.'**
+  String get obComfortBody;
+
+  /// No description provided for @goodMorning.
+  ///
+  /// In pt, this message translates to:
+  /// **'Bom dia'**
+  String get goodMorning;
+
+  /// No description provided for @goodAfternoon.
+  ///
+  /// In pt, this message translates to:
+  /// **'Boa tarde'**
+  String get goodAfternoon;
+
+  /// No description provided for @goodEvening.
+  ///
+  /// In pt, this message translates to:
+  /// **'Boa noite'**
+  String get goodEvening;
+
+  /// No description provided for @homeCycleDay.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia {n} do ciclo semanal'**
+  String homeCycleDay(int n);
+
+  /// No description provided for @routineReminder.
+  ///
+  /// In pt, this message translates to:
+  /// **'Lembrete de rotina'**
+  String get routineReminder;
+
+  /// No description provided for @homeProteinSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Preservação muscular ativa'**
+  String get homeProteinSubtitle;
+
+  /// No description provided for @ofGoal.
+  ///
+  /// In pt, this message translates to:
+  /// **'de {goal} g'**
+  String ofGoal(String goal);
+
+  /// No description provided for @homeProteinLeft.
+  ///
+  /// In pt, this message translates to:
+  /// **'Restam {g} g'**
+  String homeProteinLeft(String g);
+
+  /// No description provided for @homeProteinTip.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ideal: fracionar em refeições leves para evitar sensação de peso.'**
+  String get homeProteinTip;
+
+  /// No description provided for @homeLast7.
+  ///
+  /// In pt, this message translates to:
+  /// **'Consistência últimos 7 dias'**
+  String get homeLast7;
+
+  /// No description provided for @homeAvg.
+  ///
+  /// In pt, this message translates to:
+  /// **'Média: {g} g/dia'**
+  String homeAvg(String g);
+
+  /// No description provided for @homeChipSymptom.
+  ///
+  /// In pt, this message translates to:
+  /// **'+ Sintoma'**
+  String get homeChipSymptom;
+
+  /// No description provided for @homeChipWeight.
+  ///
+  /// In pt, this message translates to:
+  /// **'+ Peso'**
+  String get homeChipWeight;
+
+  /// No description provided for @homeChipWorkout.
+  ///
+  /// In pt, this message translates to:
+  /// **'+ Treino'**
+  String get homeChipWorkout;
+
+  /// No description provided for @homeWorkoutSub.
+  ///
+  /// In pt, this message translates to:
+  /// **'Força • {level} • {place}'**
+  String homeWorkoutSub(String level, String place);
+
+  /// No description provided for @homeWorkoutFocus.
+  ///
+  /// In pt, this message translates to:
+  /// **'Foco em sustentação muscular'**
+  String get homeWorkoutFocus;
+
+  /// No description provided for @homeWorkoutFocusSub.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treinos de força ajudam a preservar a massa magra durante o emagrecimento'**
+  String get homeWorkoutFocusSub;
+
+  /// No description provided for @homeFooter.
+  ///
+  /// In pt, this message translates to:
+  /// **'Diário de acompanhamento. Não substitui orientação de médico ou nutricionista. Em caso de desconforto persistente, contate seu profissional de saúde.'**
+  String get homeFooter;
+
+  /// No description provided for @nextDoseShort.
+  ///
+  /// In pt, this message translates to:
+  /// **'Próxima dose'**
+  String get nextDoseShort;
+
+  /// No description provided for @dosesStatusActive.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ciclo semanal • Lembrete ativo'**
+  String get dosesStatusActive;
+
+  /// No description provided for @dosesStatusOff.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ciclo semanal • Lembrete desligado'**
+  String get dosesStatusOff;
+
+  /// No description provided for @dosesPreferredDay.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia da semana preferido'**
+  String get dosesPreferredDay;
+
+  /// No description provided for @daySelected.
+  ///
+  /// In pt, this message translates to:
+  /// **'{day} selecionado'**
+  String daySelected(String day);
+
+  /// No description provided for @dosesAlarmTime.
+  ///
+  /// In pt, this message translates to:
+  /// **'Horário do alarme'**
+  String get dosesAlarmTime;
+
+  /// No description provided for @dosesPrescribed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dose na receita'**
+  String get dosesPrescribed;
+
+  /// No description provided for @doseCount.
+  ///
+  /// In pt, this message translates to:
+  /// **'{n, plural, =0{Nenhuma aplicação registrada} =1{1 aplicação registrada} other{{n} aplicações registradas}}'**
+  String doseCount(int n);
+
+  /// No description provided for @daysAgo.
+  ///
+  /// In pt, this message translates to:
+  /// **'Há {n} dias'**
+  String daysAgo(int n);
+
+  /// No description provided for @doseSheetSub.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dose prescrita: {dose} • Hoje'**
+  String doseSheetSub(String dose);
+
+  /// No description provided for @siteAbdomenFull.
+  ///
+  /// In pt, this message translates to:
+  /// **'Abdômen (Esq / Dir)'**
+  String get siteAbdomenFull;
+
+  /// No description provided for @siteThighFull.
+  ///
+  /// In pt, this message translates to:
+  /// **'Coxa (Esq / Dir)'**
+  String get siteThighFull;
+
+  /// No description provided for @siteArmFull.
+  ///
+  /// In pt, this message translates to:
+  /// **'Braço (Posterior)'**
+  String get siteArmFull;
+
+  /// No description provided for @siteLastUsed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Usado na última'**
+  String get siteLastUsed;
+
+  /// No description provided for @doseWord.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dose'**
+  String get doseWord;
+
+  /// No description provided for @proteinTipTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dica GLP-1'**
+  String get proteinTipTitle;
+
+  /// No description provided for @proteinTipBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Distribuir a proteína ao longo das refeições do dia costuma deixar a alimentação mais confortável.'**
+  String get proteinTipBody;
+
+  /// No description provided for @proteinDaysHit.
+  ///
+  /// In pt, this message translates to:
+  /// **'{n}/7 dias atingidos'**
+  String proteinDaysHit(int n);
+
+  /// No description provided for @proteinFrequent.
+  ///
+  /// In pt, this message translates to:
+  /// **'Frequentes na sua rotina'**
+  String get proteinFrequent;
+
+  /// No description provided for @proteinResults.
+  ///
+  /// In pt, this message translates to:
+  /// **'Resultados da busca'**
+  String get proteinResults;
+
+  /// No description provided for @proteinPerPortion.
+  ///
+  /// In pt, this message translates to:
+  /// **'{g} g proteína'**
+  String proteinPerPortion(String g);
+
+  /// No description provided for @proteinSwipe.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deslize para excluir'**
+  String get proteinSwipe;
+
+  /// No description provided for @proteinHydrationTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hidratação e digestão'**
+  String get proteinHydrationTitle;
+
+  /// No description provided for @proteinHydrationBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Lembre-se de beber água em pequenos goles ao longo do dia para apoiar a digestão e evitar constipação.'**
+  String get proteinHydrationBody;
+
+  /// No description provided for @daysAfterDoseWith.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia {n} pós-dose ({dose})'**
+  String daysAfterDoseWith(int n, String dose);
+
+  /// No description provided for @symNoteLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nota ou possível gatilho (opcional)'**
+  String get symNoteLabel;
+
+  /// No description provided for @symWeekN.
+  ///
+  /// In pt, this message translates to:
+  /// **'Semana {n}'**
+  String symWeekN(int n);
+
+  /// No description provided for @symCurveLegend.
+  ///
+  /// In pt, this message translates to:
+  /// **'Intensidade média por dia'**
+  String get symCurveLegend;
+
+  /// No description provided for @todayDayN.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hoje: Dia {n}'**
+  String todayDayN(int n);
+
+  /// No description provided for @symTipTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Leve para sua consulta'**
+  String get symTipTitle;
+
+  /// No description provided for @symTipBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Este padrão é feito só com os seus registros e pode ajudar seu profissional de saúde a entender sua adaptação.'**
+  String get symTipBody;
+
+  /// No description provided for @symDoseLogged.
+  ///
+  /// In pt, this message translates to:
+  /// **'Aplicação registrada'**
+  String get symDoseLogged;
+
+  /// No description provided for @weightTag.
+  ///
+  /// In pt, this message translates to:
+  /// **'Acompanhamento metabólico'**
+  String get weightTag;
+
+  /// No description provided for @weightSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Registre seu peso e acompanhe a evolução com calma, sem julgamentos.'**
+  String get weightSubtitle;
+
+  /// No description provided for @weightThisWeek.
+  ///
+  /// In pt, this message translates to:
+  /// **'Esta semana'**
+  String get weightThisWeek;
+
+  /// No description provided for @weightLowest.
+  ///
+  /// In pt, this message translates to:
+  /// **'Menor registro'**
+  String get weightLowest;
+
+  /// No description provided for @weightPaceTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu ritmo'**
+  String get weightPaceTitle;
+
+  /// No description provided for @weightPaceBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'média de {kg} kg/semana desde o primeiro registro.'**
+  String weightPaceBody(String kg);
+
+  /// No description provided for @weightNewLog.
+  ///
+  /// In pt, this message translates to:
+  /// **'Novo registro'**
+  String get weightNewLog;
+
+  /// No description provided for @weightLess.
+  ///
+  /// In pt, this message translates to:
+  /// **'Menos 100 g'**
+  String get weightLess;
+
+  /// No description provided for @weightMore.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mais 100 g'**
+  String get weightMore;
+
+  /// No description provided for @weightConfirm.
+  ///
+  /// In pt, this message translates to:
+  /// **'Confirmar aferição'**
+  String get weightConfirm;
+
+  /// No description provided for @weightLogsCount.
+  ///
+  /// In pt, this message translates to:
+  /// **'{n} registros'**
+  String weightLogsCount(int n);
+
+  /// No description provided for @weightLatest.
+  ///
+  /// In pt, this message translates to:
+  /// **'Últimos registros'**
+  String get weightLatest;
+
+  /// No description provided for @weightSeeAll.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver histórico completo ({n})'**
+  String weightSeeAll(int n);
+
+  /// No description provided for @leanTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Proteção de massa magra'**
+  String get leanTitle;
+
+  /// No description provided for @leanSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Proteína e treino de força'**
+  String get leanSubtitle;
+
+  /// No description provided for @leanBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Durante a perda de peso, proteína suficiente e treinos de força ajudam a preservar os músculos:'**
+  String get leanBody;
+
+  /// No description provided for @leanProtein.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ingestão de proteína hoje'**
+  String get leanProtein;
+
+  /// No description provided for @leanWorkouts.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treinos de força semanais'**
+  String get leanWorkouts;
+
+  /// No description provided for @leanWorkoutsValue.
+  ///
+  /// In pt, this message translates to:
+  /// **'{n} de {goal} concluídos'**
+  String leanWorkoutsValue(int n, int goal);
+
+  /// No description provided for @leanTip.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ingerir proteína fracionada em cada refeição ajuda na saciedade e na preservação dos músculos.'**
+  String get leanTip;
+
+  /// No description provided for @workoutsTag.
+  ///
+  /// In pt, this message translates to:
+  /// **'Metabolismo ativo'**
+  String get workoutsTag;
+
+  /// No description provided for @workoutsThisWeek.
+  ///
+  /// In pt, this message translates to:
+  /// **'Esta semana'**
+  String get workoutsThisWeek;
+
+  /// No description provided for @workoutsGoalFull.
+  ///
+  /// In pt, this message translates to:
+  /// **'Excelente! Meta da semana (3 sessões) concluída.'**
+  String get workoutsGoalFull;
+
+  /// No description provided for @workoutsGoalMissing.
+  ///
+  /// In pt, this message translates to:
+  /// **'{n, plural, =1{Mais 1 treino para a meta mínima da semana.} other{Mais {n} treinos para a meta mínima da semana.}}'**
+  String workoutsGoalMissing(int n);
+
+  /// No description provided for @workoutsWhyTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Por que treinar força com GLP-1?'**
+  String get workoutsWhyTitle;
+
+  /// No description provided for @workoutsTemplatesTag.
+  ///
+  /// In pt, this message translates to:
+  /// **'4 modelos'**
+  String get workoutsTemplatesTag;
+
+  /// No description provided for @workoutsSuggested.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sugerido para hoje'**
+  String get workoutsSuggested;
+
+  /// No description provided for @workoutsNoEquipment.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sem aparelhos'**
+  String get workoutsNoEquipment;
+
+  /// No description provided for @sessionN.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sessão {n}'**
+  String sessionN(int n);
+
+  /// No description provided for @sessionActiveTime.
+  ///
+  /// In pt, this message translates to:
+  /// **'tempo ativo'**
+  String get sessionActiveTime;
+
+  /// No description provided for @sessionPause.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pausar cronômetro'**
+  String get sessionPause;
+
+  /// No description provided for @sessionResume.
+  ///
+  /// In pt, this message translates to:
+  /// **'Retomar'**
+  String get sessionResume;
+
+  /// No description provided for @sessionPauseSession.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pausar sessão'**
+  String get sessionPauseSession;
+
+  /// No description provided for @sessionWater.
+  ///
+  /// In pt, this message translates to:
+  /// **'Beba pequenos goles de água entre os movimentos.'**
+  String get sessionWater;
+
+  /// No description provided for @sessionSafetyTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sentiu tontura ou náusea súbita?'**
+  String get sessionSafetyTitle;
+
+  /// No description provided for @setOf.
+  ///
+  /// In pt, this message translates to:
+  /// **'Série {n} de {total}'**
+  String setOf(int n, int total);
+
+  /// No description provided for @upNext.
+  ///
+  /// In pt, this message translates to:
+  /// **'A seguir'**
+  String get upNext;
+
+  /// No description provided for @repsN.
+  ///
+  /// In pt, this message translates to:
+  /// **'{reps} repetições'**
+  String repsN(String reps);
+
+  /// No description provided for @current.
+  ///
+  /// In pt, this message translates to:
+  /// **'(atual)'**
+  String get current;
+
+  /// No description provided for @setN.
+  ///
+  /// In pt, this message translates to:
+  /// **'Série {n}'**
+  String setN(int n);
+
+  /// No description provided for @restLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Descanso entre séries'**
+  String get restLabel;
+
+  /// No description provided for @restButton.
+  ///
+  /// In pt, this message translates to:
+  /// **'Descansar 45s'**
+  String get restButton;
+
+  /// No description provided for @settingsSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu perfil, lembretes e privacidade'**
+  String get settingsSubtitle;
+
+  /// No description provided for @deleteSub.
+  ///
+  /// In pt, this message translates to:
+  /// **'Apaga permanentemente tudo, inclusive a conta'**
+  String get deleteSub;
 }
 
 class _AppLocalizationsDelegate

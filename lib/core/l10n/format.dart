@@ -27,3 +27,19 @@ String fmtDayDate(DateTime d) => '${weekdayName(d.weekday)}, ${DateFormat('dd/MM
 String fmtDateTime(DateTime d) => DateFormat('dd/MM, HH:mm').format(d);
 
 DateTime dayOnly(DateTime d) => DateTime(d.year, d.month, d.day);
+
+String _cap(String s) => s.isEmpty ? s : s[0].toUpperCase() + s.substring(1);
+
+/// "Domingo, 18/Mai"
+String fmtDayMonth(DateTime d) =>
+    '${weekdayName(d.weekday)}, ${DateFormat('dd').format(d)}/${_cap(DateFormat('MMM', 'pt_BR').format(d).replaceAll('.', ''))}';
+
+/// "Hoje, 14:20" · "Ontem, 19:15" · "Terça, 10:00" (última semana) · "12/05, 10:00".
+String fmtRelative(DateTime d, {required String today, required String yesterday, DateTime? now}) {
+  final days = dayOnly(now ?? DateTime.now()).difference(dayOnly(d)).inDays;
+  final hm = DateFormat('HH:mm').format(d);
+  if (days == 0) return '$today, $hm';
+  if (days == 1) return '$yesterday, $hm';
+  if (days < 7) return '${weekdayName(d.weekday).split('-').first}, $hm';
+  return '${DateFormat('dd/MM').format(d)}, $hm';
+}
