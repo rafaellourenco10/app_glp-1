@@ -471,6 +471,168 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Como você está se sentindo hoje?'**
   String get homeHowAreYou;
+
+  /// No description provided for @today.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hoje'**
+  String get today;
+
+  /// No description provided for @tomorrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Amanhã'**
+  String get tomorrow;
+
+  /// No description provided for @inDays.
+  ///
+  /// In pt, this message translates to:
+  /// **'Em {n} dias'**
+  String inDays(int n);
+
+  /// No description provided for @atTime.
+  ///
+  /// In pt, this message translates to:
+  /// **'{day}, às {time}'**
+  String atTime(String day, String time);
+
+  /// No description provided for @noteOptional.
+  ///
+  /// In pt, this message translates to:
+  /// **'Observação (opcional)'**
+  String get noteOptional;
+
+  /// No description provided for @notifTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Lembrete da sua aplicação'**
+  String get notifTitle;
+
+  /// No description provided for @notifBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'{medication} · {dose} — no dia e horário que você definiu.'**
+  String notifBody(String medication, String dose);
+
+  /// No description provided for @notifChannel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Lembrete de aplicação'**
+  String get notifChannel;
+
+  /// No description provided for @dosesTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Rotina de aplicação'**
+  String get dosesTitle;
+
+  /// No description provided for @dosesSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Acompanhe seus dias de aplicação e registre cada uma.'**
+  String get dosesSubtitle;
+
+  /// No description provided for @nextDose.
+  ///
+  /// In pt, this message translates to:
+  /// **'Próxima aplicação'**
+  String get nextDose;
+
+  /// No description provided for @reminderOff.
+  ///
+  /// In pt, this message translates to:
+  /// **'Lembrete desligado'**
+  String get reminderOff;
+
+  /// No description provided for @reminderConfig.
+  ///
+  /// In pt, this message translates to:
+  /// **'Configuração do lembrete'**
+  String get reminderConfig;
+
+  /// No description provided for @reminderExact.
+  ///
+  /// In pt, this message translates to:
+  /// **'O lembrete toca exatamente no dia e horário escolhidos, toda semana.'**
+  String get reminderExact;
+
+  /// No description provided for @reminderSaved.
+  ///
+  /// In pt, this message translates to:
+  /// **'Lembrete atualizado.'**
+  String get reminderSaved;
+
+  /// No description provided for @doseRegister.
+  ///
+  /// In pt, this message translates to:
+  /// **'Registrei a aplicação'**
+  String get doseRegister;
+
+  /// No description provided for @doseHistory.
+  ///
+  /// In pt, this message translates to:
+  /// **'Histórico de aplicações'**
+  String get doseHistory;
+
+  /// No description provided for @doseHistoryEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhuma aplicação registrada ainda.'**
+  String get doseHistoryEmpty;
+
+  /// No description provided for @doseSheetTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Registrar aplicação'**
+  String get doseSheetTitle;
+
+  /// No description provided for @doseSheetNow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Registrada agora: {when}'**
+  String doseSheetNow(String when);
+
+  /// No description provided for @doseField.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dose (como está na sua receita)'**
+  String get doseField;
+
+  /// No description provided for @doseSite.
+  ///
+  /// In pt, this message translates to:
+  /// **'Local da aplicação (opcional)'**
+  String get doseSite;
+
+  /// No description provided for @doseNoteHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ex: sem desconforto'**
+  String get doseNoteHint;
+
+  /// No description provided for @doseConfirm.
+  ///
+  /// In pt, this message translates to:
+  /// **'Confirmar registro'**
+  String get doseConfirm;
+
+  /// No description provided for @siteAbdomen.
+  ///
+  /// In pt, this message translates to:
+  /// **'Abdômen'**
+  String get siteAbdomen;
+
+  /// No description provided for @siteThigh.
+  ///
+  /// In pt, this message translates to:
+  /// **'Coxa'**
+  String get siteThigh;
+
+  /// No description provided for @siteArm.
+  ///
+  /// In pt, this message translates to:
+  /// **'Braço'**
+  String get siteArm;
 }
 
 class _AppLocalizationsDelegate

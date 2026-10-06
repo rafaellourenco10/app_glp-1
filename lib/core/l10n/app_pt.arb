@@ -83,5 +83,66 @@
       }
     }
   },
-  "homeHowAreYou": "Como você está se sentindo hoje?"
+  "homeHowAreYou": "Como você está se sentindo hoje?",
+  "today": "Hoje",
+  "tomorrow": "Amanhã",
+  "inDays": "Em {n} dias",
+  "@inDays": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "atTime": "{day}, às {time}",
+  "@atTime": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "noteOptional": "Observação (opcional)",
+  "notifTitle": "Lembrete da sua aplicação",
+  "notifBody": "{medication} · {dose} — no dia e horário que você definiu.",
+  "@notifBody": {
+    "placeholders": {
+      "medication": {
+        "type": "String"
+      },
+      "dose": {
+        "type": "String"
+      }
+    }
+  },
+  "notifChannel": "Lembrete de aplicação",
+  "dosesTitle": "Rotina de aplicação",
+  "dosesSubtitle": "Acompanhe seus dias de aplicação e registre cada uma.",
+  "nextDose": "Próxima aplicação",
+  "reminderOff": "Lembrete desligado",
+  "reminderConfig": "Configuração do lembrete",
+  "reminderExact": "O lembrete toca exatamente no dia e horário escolhidos, toda semana.",
+  "reminderSaved": "Lembrete atualizado.",
+  "doseRegister": "Registrei a aplicação",
+  "doseHistory": "Histórico de aplicações",
+  "doseHistoryEmpty": "Nenhuma aplicação registrada ainda.",
+  "doseSheetTitle": "Registrar aplicação",
+  "doseSheetNow": "Registrada agora: {when}",
+  "@doseSheetNow": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "doseField": "Dose (como está na sua receita)",
+  "doseSite": "Local da aplicação (opcional)",
+  "doseNoteHint": "Ex: sem desconforto",
+  "doseConfirm": "Confirmar registro",
+  "siteAbdomen": "Abdômen",
+  "siteThigh": "Coxa",
+  "siteArm": "Braço"
 }

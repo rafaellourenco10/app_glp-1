@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../core/l10n/format.dart';
+import '../../core/notifications/notifications.dart';
 import '../../core/supabase/supabase.dart';
+import '../doses/doses_repository.dart';
 
 class Profile {
   Profile({required this.name, this.birthYear, this.heightCm, required this.proteinGoalG});
@@ -70,6 +72,16 @@ class OnboardingRepository {
       'protein_goal_g': d.proteinGoalG,
       'consented_at': DateTime.now().toUtc().toIso8601String(),
     });
+    try {
+      await Notifications.scheduleWeeklyDose(
+        first: nextOccurrence(d.weekday, d.time, DateTime.now()),
+        medication: d.medication,
+        dose: d.doseLabel,
+        askPermission: true,
+      );
+    } catch (_) {
+      // Dados já salvos; o HomeShell reagenda o lembrete ao abrir.
+    }
   }
 }
 

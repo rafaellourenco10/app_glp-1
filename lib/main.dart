@@ -5,6 +5,7 @@ import 'package:intl/intl.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'app.dart';
+import 'core/notifications/notifications.dart';
 import 'core/supabase/supabase.dart';
 
 Future<void> main() async {
@@ -12,5 +13,6 @@ Future<void> main() async {
   await Supabase.initialize(url: supabaseUrl, publishableKey: supabaseAnonKey);
   await initializeDateFormatting('pt_BR');
   Intl.defaultLocale = 'pt_BR';
+  await Notifications.init();
   runApp(const ProviderScope(child: App()));
 }

@@ -216,4 +216,95 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get homeHowAreYou => 'Como você está se sentindo hoje?';
+
+  @override
+  String get today => 'Hoje';
+
+  @override
+  String get tomorrow => 'Amanhã';
+
+  @override
+  String inDays(int n) {
+    return 'Em $n dias';
+  }
+
+  @override
+  String atTime(String day, String time) {
+    return '$day, às $time';
+  }
+
+  @override
+  String get noteOptional => 'Observação (opcional)';
+
+  @override
+  String get notifTitle => 'Lembrete da sua aplicação';
+
+  @override
+  String notifBody(String medication, String dose) {
+    return '$medication · $dose — no dia e horário que você definiu.';
+  }
+
+  @override
+  String get notifChannel => 'Lembrete de aplicação';
+
+  @override
+  String get dosesTitle => 'Rotina de aplicação';
+
+  @override
+  String get dosesSubtitle =>
+      'Acompanhe seus dias de aplicação e registre cada uma.';
+
+  @override
+  String get nextDose => 'Próxima aplicação';
+
+  @override
+  String get reminderOff => 'Lembrete desligado';
+
+  @override
+  String get reminderConfig => 'Configuração do lembrete';
+
+  @override
+  String get reminderExact =>
+      'O lembrete toca exatamente no dia e horário escolhidos, toda semana.';
+
+  @override
+  String get reminderSaved => 'Lembrete atualizado.';
+
+  @override
+  String get doseRegister => 'Registrei a aplicação';
+
+  @override
+  String get doseHistory => 'Histórico de aplicações';
+
+  @override
+  String get doseHistoryEmpty => 'Nenhuma aplicação registrada ainda.';
+
+  @override
+  String get doseSheetTitle => 'Registrar aplicação';
+
+  @override
+  String doseSheetNow(String when) {
+    return 'Registrada agora: $when';
+  }
+
+  @override
+  String get doseField => 'Dose (como está na sua receita)';
+
+  @override
+  String get doseSite => 'Local da aplicação (opcional)';
+
+  @override
+  String get doseNoteHint => 'Ex: sem desconforto';
+
+  @override
+  String get doseConfirm => 'Confirmar registro';
+
+  @override
+  String get siteAbdomen => 'Abdômen';
+
+  @override
+  String get siteThigh => 'Coxa';
+
+  @override
+  String get siteArm => 'Braço';
 }

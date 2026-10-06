@@ -8,12 +8,14 @@ import 'core/supabase/supabase.dart';
 import 'core/theme/theme.dart';
 import 'core/theme/widgets.dart';
 import 'features/auth/login_screen.dart';
+import 'features/doses/doses_screen.dart';
 import 'features/home/home_shell.dart';
 import 'features/onboarding/onboarding_repository.dart';
 import 'features/onboarding/onboarding_screen.dart';
 
 final _router = GoRouter(routes: [
   GoRoute(path: '/', builder: (_, _) => const Gate()),
+  GoRoute(path: '/doses', builder: (_, _) => const DosesScreen()),
 ]);
 
 class App extends ConsumerWidget {
