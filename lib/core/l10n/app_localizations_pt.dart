@@ -628,4 +628,51 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get homeWorkoutStart => 'Começar';
+
+  @override
+  String get settingsProfile => 'Seu perfil';
+
+  @override
+  String get settingsGoal => 'Meta diária de proteína';
+
+  @override
+  String get settingsReminder => 'Lembrete da aplicação';
+
+  @override
+  String get settingsReminderSub => 'Dia, horário e dose';
+
+  @override
+  String get settingsTheme => 'Tema';
+
+  @override
+  String get themeSystem => 'Sistema';
+
+  @override
+  String get themeLight => 'Claro';
+
+  @override
+  String get themeDark => 'Escuro';
+
+  @override
+  String get exportTitle => 'Exportar meus dados (JSON)';
+
+  @override
+  String get exportSub =>
+      'Copia todos os seus registros para a área de transferência';
+
+  @override
+  String get exportDone => 'Dados copiados para a área de transferência.';
+
+  @override
+  String get signOut => 'Sair';
+
+  @override
+  String get deleteTitle => 'Excluir minha conta e todos os meus dados';
+
+  @override
+  String get deleteBody =>
+      'Isso apaga permanentemente seu perfil, doses, sintomas, peso, proteína e treinos, além da sua conta. Não é possível desfazer.';
+
+  @override
+  String get deleteConfirm => 'Excluir definitivamente';
 }

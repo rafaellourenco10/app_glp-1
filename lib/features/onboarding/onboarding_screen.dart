@@ -171,7 +171,7 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
       SectionCard(
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
           CardHeader(icon: Icons.verified_user_outlined, title: l.obPrivacyTitle, subtitle: l.obPrivacySubtitle,
-              tint: c.secondaryContainer.withValues(alpha: 0.4)),
+              tint: c.secondaryFixed),
           const SizedBox(height: 12),
           Text(l.obPrivacyBody, style: t.bodyMedium?.copyWith(color: c.onSurfaceVariant)),
           check(l.obPrivacy1),

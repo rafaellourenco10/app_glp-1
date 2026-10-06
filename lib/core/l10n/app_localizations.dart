@@ -1161,6 +1161,96 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Começar'**
   String get homeWorkoutStart;
+
+  /// No description provided for @settingsProfile.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu perfil'**
+  String get settingsProfile;
+
+  /// No description provided for @settingsGoal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Meta diária de proteína'**
+  String get settingsGoal;
+
+  /// No description provided for @settingsReminder.
+  ///
+  /// In pt, this message translates to:
+  /// **'Lembrete da aplicação'**
+  String get settingsReminder;
+
+  /// No description provided for @settingsReminderSub.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia, horário e dose'**
+  String get settingsReminderSub;
+
+  /// No description provided for @settingsTheme.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tema'**
+  String get settingsTheme;
+
+  /// No description provided for @themeSystem.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sistema'**
+  String get themeSystem;
+
+  /// No description provided for @themeLight.
+  ///
+  /// In pt, this message translates to:
+  /// **'Claro'**
+  String get themeLight;
+
+  /// No description provided for @themeDark.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escuro'**
+  String get themeDark;
+
+  /// No description provided for @exportTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Exportar meus dados (JSON)'**
+  String get exportTitle;
+
+  /// No description provided for @exportSub.
+  ///
+  /// In pt, this message translates to:
+  /// **'Copia todos os seus registros para a área de transferência'**
+  String get exportSub;
+
+  /// No description provided for @exportDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dados copiados para a área de transferência.'**
+  String get exportDone;
+
+  /// No description provided for @signOut.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sair'**
+  String get signOut;
+
+  /// No description provided for @deleteTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Excluir minha conta e todos os meus dados'**
+  String get deleteTitle;
+
+  /// No description provided for @deleteBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Isso apaga permanentemente seu perfil, doses, sintomas, peso, proteína e treinos, além da sua conta. Não é possível desfazer.'**
+  String get deleteBody;
+
+  /// No description provided for @deleteConfirm.
+  ///
+  /// In pt, this message translates to:
+  /// **'Excluir definitivamente'**
+  String get deleteConfirm;
 }
 
 class _AppLocalizationsDelegate

@@ -376,5 +376,20 @@
   "sessionFinish": "Finalizar treino",
   "sessionDiscard": "Descartar treino",
   "homeWorkoutTitle": "Treino sugerido de hoje",
-  "homeWorkoutStart": "Começar"
+  "homeWorkoutStart": "Começar",
+  "settingsProfile": "Seu perfil",
+  "settingsGoal": "Meta diária de proteína",
+  "settingsReminder": "Lembrete da aplicação",
+  "settingsReminderSub": "Dia, horário e dose",
+  "settingsTheme": "Tema",
+  "themeSystem": "Sistema",
+  "themeLight": "Claro",
+  "themeDark": "Escuro",
+  "exportTitle": "Exportar meus dados (JSON)",
+  "exportSub": "Copia todos os seus registros para a área de transferência",
+  "exportDone": "Dados copiados para a área de transferência.",
+  "signOut": "Sair",
+  "deleteTitle": "Excluir minha conta e todos os meus dados",
+  "deleteBody": "Isso apaga permanentemente seu perfil, doses, sintomas, peso, proteína e treinos, além da sua conta. Não é possível desfazer.",
+  "deleteConfirm": "Excluir definitivamente"
 }

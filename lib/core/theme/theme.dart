@@ -106,7 +106,7 @@ ThemeData _build(ColorScheme c) {
     ),
     chipTheme: ChipThemeData(
       shape: StadiumBorder(side: BorderSide(color: c.outline.withValues(alpha: 0.3))),
-      selectedColor: c.primaryContainer,
+      selectedColor: c.primary,
       backgroundColor: c.surfaceContainerLowest,
       labelStyle: WidgetStateTextStyle.resolveWith(
         (s) => text.labelMedium!.copyWith(color: s.contains(WidgetState.selected) ? c.onPrimary : c.onSurfaceVariant),

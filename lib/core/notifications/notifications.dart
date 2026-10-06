@@ -14,7 +14,11 @@ class Notifications {
 
   static Future<void> init() async {
     tzdata.initializeTimeZones();
-    tz.setLocalLocation(tz.getLocation((await FlutterTimezone.getLocalTimezone()).identifier));
+    try {
+      tz.setLocalLocation(tz.getLocation((await FlutterTimezone.getLocalTimezone()).identifier));
+    } catch (_) {
+      // Fuso desconhecido: fica em UTC. O instante agendado continua certo (TZDateTime.from).
+    }
     await _plugin.initialize(
       settings: const InitializationSettings(
         android: AndroidInitializationSettings('@mipmap/ic_launcher'),

@@ -121,7 +121,7 @@ class HomeScreen extends ConsumerWidget {
             child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
               CardHeader(
                 icon: Icons.fitness_center,
-                tint: c.secondaryContainer.withValues(alpha: 0.6),
+                tint: c.secondaryFixed,
                 title: l.homeWorkoutTitle,
                 subtitle: '${workout.name} · ${levelLabel(l, workout.level)}',
               ),

@@ -12,6 +12,7 @@ import 'features/doses/doses_screen.dart';
 import 'features/home/home_shell.dart';
 import 'features/onboarding/onboarding_repository.dart';
 import 'features/onboarding/onboarding_screen.dart';
+import 'features/settings/settings_repository.dart';
 import 'features/weight/weight_screen.dart';
 import 'features/workouts/workout_session_screen.dart';
 
@@ -34,6 +35,7 @@ class App extends ConsumerWidget {
       onGenerateTitle: (c) => AppLocalizations.of(c).appName,
       theme: lightTheme,
       darkTheme: darkTheme,
+      themeMode: ref.watch(themeModeProvider),
       locale: const Locale('pt'),
       supportedLocales: AppLocalizations.supportedLocales,
       localizationsDelegates: const [

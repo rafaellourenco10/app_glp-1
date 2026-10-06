@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/l10n/app_localizations.dart';
 import '../doses/doses_repository.dart';
 import '../protein/protein_screen.dart';
+import '../settings/settings_screen.dart';
 import '../symptoms/symptoms_screen.dart';
 import '../workouts/workouts_screen.dart';
 import 'home_screen.dart';
@@ -40,7 +41,7 @@ class HomeShellState extends ConsumerState<HomeShell> {
           ProteinScreen(),
           SymptomsScreen(),
           WorkoutsScreen(),
-          SizedBox(),
+          SettingsScreen(),
         ]),
       ),
       bottomNavigationBar: NavigationBar(
