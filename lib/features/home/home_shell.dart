@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/l10n/app_localizations.dart';
 import '../doses/doses_repository.dart';
 import '../protein/protein_screen.dart';
+import '../symptoms/symptoms_screen.dart';
 import 'home_screen.dart';
 
 /// Barra inferior: Hoje · Proteína · Sintomas · Treinos · Perfil.
@@ -36,7 +37,7 @@ class HomeShellState extends ConsumerState<HomeShell> {
         child: IndexedStack(index: _tab, children: const [
           HomeScreen(),
           ProteinScreen(),
-          SizedBox(),
+          SymptomsScreen(),
           SizedBox(),
           SizedBox(),
         ]),

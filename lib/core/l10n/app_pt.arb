@@ -243,5 +243,78 @@
       }
     }
   },
-  "homeProteinLog": "Registrar proteína"
+  "homeProteinLog": "Registrar proteína",
+  "homeLogSymptom": "Registrar sintoma",
+  "homeLogWeight": "Registrar peso",
+  "homeLogWorkout": "Treinar",
+  "symNausea": "Náusea",
+  "symVomit": "Vômito",
+  "symConstipation": "Constipação",
+  "symDiarrhea": "Diarreia",
+  "symReflux": "Refluxo",
+  "symFatigue": "Fadiga",
+  "symAppetite": "Falta de apetite",
+  "symHeadache": "Dor de cabeça",
+  "symDizziness": "Tontura",
+  "sev0": "Nenhum",
+  "sev1": "Leve",
+  "sev2": "Moderado",
+  "sev3": "Forte",
+  "symTitle": "Sintomas e bem-estar",
+  "symSubtitle": "Registre como você se sente e veja padrões ao longo da semana.",
+  "symHowNow": "Como você se sente agora?",
+  "symIntensity": "Intensidade: {symptom}",
+  "@symIntensity": {
+    "placeholders": {
+      "symptom": {
+        "type": "String"
+      }
+    }
+  },
+  "symNoteHint": "Ex: começou após o almoço",
+  "symSave": "Salvar registro",
+  "symCycleTitle": "Sintomas × dias desde a aplicação",
+  "symCycleSubtitle": "Intensidade média (0 a 3) registrada em cada dia após a última aplicação.",
+  "symCycleEmpty": "Registre aplicações e sintomas para ver o gráfico.",
+  "symHistory": "Histórico recente",
+  "symHistoryEmpty": "Nenhum sintoma registrado.",
+  "symSafety": "Em caso de vômito persistente, dor abdominal intensa ou sintomas que preocupem, procure sua equipe de saúde.",
+  "daysAfterDose": "Dia {n} após a aplicação",
+  "@daysAfterDose": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "dayN": "Dia {n}",
+  "@dayN": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "weightTitle": "Evolução do peso",
+  "weightCurrent": "Peso atual",
+  "weightTotal": "{diff} kg total",
+  "@weightTotal": {
+    "placeholders": {
+      "diff": {
+        "type": "String"
+      }
+    }
+  },
+  "weightStart": "Início: {kg} kg",
+  "@weightStart": {
+    "placeholders": {
+      "kg": {
+        "type": "String"
+      }
+    }
+  },
+  "weightLogToday": "Registrar peso de hoje",
+  "weightEvolution": "Evolução",
+  "weightFluctuation": "Oscilações de 0,5 a 1 kg entre dias são comuns e costumam refletir água e intestino.",
+  "weightHistory": "Histórico de pesagens"
 }

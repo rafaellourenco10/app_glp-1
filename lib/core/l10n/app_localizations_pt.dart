@@ -403,4 +403,133 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get homeProteinLog => 'Registrar proteína';
+
+  @override
+  String get homeLogSymptom => 'Registrar sintoma';
+
+  @override
+  String get homeLogWeight => 'Registrar peso';
+
+  @override
+  String get homeLogWorkout => 'Treinar';
+
+  @override
+  String get symNausea => 'Náusea';
+
+  @override
+  String get symVomit => 'Vômito';
+
+  @override
+  String get symConstipation => 'Constipação';
+
+  @override
+  String get symDiarrhea => 'Diarreia';
+
+  @override
+  String get symReflux => 'Refluxo';
+
+  @override
+  String get symFatigue => 'Fadiga';
+
+  @override
+  String get symAppetite => 'Falta de apetite';
+
+  @override
+  String get symHeadache => 'Dor de cabeça';
+
+  @override
+  String get symDizziness => 'Tontura';
+
+  @override
+  String get sev0 => 'Nenhum';
+
+  @override
+  String get sev1 => 'Leve';
+
+  @override
+  String get sev2 => 'Moderado';
+
+  @override
+  String get sev3 => 'Forte';
+
+  @override
+  String get symTitle => 'Sintomas e bem-estar';
+
+  @override
+  String get symSubtitle =>
+      'Registre como você se sente e veja padrões ao longo da semana.';
+
+  @override
+  String get symHowNow => 'Como você se sente agora?';
+
+  @override
+  String symIntensity(String symptom) {
+    return 'Intensidade: $symptom';
+  }
+
+  @override
+  String get symNoteHint => 'Ex: começou após o almoço';
+
+  @override
+  String get symSave => 'Salvar registro';
+
+  @override
+  String get symCycleTitle => 'Sintomas × dias desde a aplicação';
+
+  @override
+  String get symCycleSubtitle =>
+      'Intensidade média (0 a 3) registrada em cada dia após a última aplicação.';
+
+  @override
+  String get symCycleEmpty =>
+      'Registre aplicações e sintomas para ver o gráfico.';
+
+  @override
+  String get symHistory => 'Histórico recente';
+
+  @override
+  String get symHistoryEmpty => 'Nenhum sintoma registrado.';
+
+  @override
+  String get symSafety =>
+      'Em caso de vômito persistente, dor abdominal intensa ou sintomas que preocupem, procure sua equipe de saúde.';
+
+  @override
+  String daysAfterDose(int n) {
+    return 'Dia $n após a aplicação';
+  }
+
+  @override
+  String dayN(int n) {
+    return 'Dia $n';
+  }
+
+  @override
+  String get weightTitle => 'Evolução do peso';
+
+  @override
+  String get weightCurrent => 'Peso atual';
+
+  @override
+  String weightTotal(String diff) {
+    return '$diff kg total';
+  }
+
+  @override
+  String weightStart(String kg) {
+    return 'Início: $kg kg';
+  }
+
+  @override
+  String get weightLogToday => 'Registrar peso de hoje';
+
+  @override
+  String get weightEvolution => 'Evolução';
+
+  @override
+  String get weightFluctuation =>
+      'Oscilações de 0,5 a 1 kg entre dias são comuns e costumam refletir água e intestino.';
+
+  @override
+  String get weightHistory => 'Histórico de pesagens';
 }

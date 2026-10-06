@@ -777,6 +777,234 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Registrar proteína'**
   String get homeProteinLog;
+
+  /// No description provided for @homeLogSymptom.
+  ///
+  /// In pt, this message translates to:
+  /// **'Registrar sintoma'**
+  String get homeLogSymptom;
+
+  /// No description provided for @homeLogWeight.
+  ///
+  /// In pt, this message translates to:
+  /// **'Registrar peso'**
+  String get homeLogWeight;
+
+  /// No description provided for @homeLogWorkout.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treinar'**
+  String get homeLogWorkout;
+
+  /// No description provided for @symNausea.
+  ///
+  /// In pt, this message translates to:
+  /// **'Náusea'**
+  String get symNausea;
+
+  /// No description provided for @symVomit.
+  ///
+  /// In pt, this message translates to:
+  /// **'Vômito'**
+  String get symVomit;
+
+  /// No description provided for @symConstipation.
+  ///
+  /// In pt, this message translates to:
+  /// **'Constipação'**
+  String get symConstipation;
+
+  /// No description provided for @symDiarrhea.
+  ///
+  /// In pt, this message translates to:
+  /// **'Diarreia'**
+  String get symDiarrhea;
+
+  /// No description provided for @symReflux.
+  ///
+  /// In pt, this message translates to:
+  /// **'Refluxo'**
+  String get symReflux;
+
+  /// No description provided for @symFatigue.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fadiga'**
+  String get symFatigue;
+
+  /// No description provided for @symAppetite.
+  ///
+  /// In pt, this message translates to:
+  /// **'Falta de apetite'**
+  String get symAppetite;
+
+  /// No description provided for @symHeadache.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dor de cabeça'**
+  String get symHeadache;
+
+  /// No description provided for @symDizziness.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tontura'**
+  String get symDizziness;
+
+  /// No description provided for @sev0.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhum'**
+  String get sev0;
+
+  /// No description provided for @sev1.
+  ///
+  /// In pt, this message translates to:
+  /// **'Leve'**
+  String get sev1;
+
+  /// No description provided for @sev2.
+  ///
+  /// In pt, this message translates to:
+  /// **'Moderado'**
+  String get sev2;
+
+  /// No description provided for @sev3.
+  ///
+  /// In pt, this message translates to:
+  /// **'Forte'**
+  String get sev3;
+
+  /// No description provided for @symTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sintomas e bem-estar'**
+  String get symTitle;
+
+  /// No description provided for @symSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Registre como você se sente e veja padrões ao longo da semana.'**
+  String get symSubtitle;
+
+  /// No description provided for @symHowNow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Como você se sente agora?'**
+  String get symHowNow;
+
+  /// No description provided for @symIntensity.
+  ///
+  /// In pt, this message translates to:
+  /// **'Intensidade: {symptom}'**
+  String symIntensity(String symptom);
+
+  /// No description provided for @symNoteHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ex: começou após o almoço'**
+  String get symNoteHint;
+
+  /// No description provided for @symSave.
+  ///
+  /// In pt, this message translates to:
+  /// **'Salvar registro'**
+  String get symSave;
+
+  /// No description provided for @symCycleTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sintomas × dias desde a aplicação'**
+  String get symCycleTitle;
+
+  /// No description provided for @symCycleSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Intensidade média (0 a 3) registrada em cada dia após a última aplicação.'**
+  String get symCycleSubtitle;
+
+  /// No description provided for @symCycleEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Registre aplicações e sintomas para ver o gráfico.'**
+  String get symCycleEmpty;
+
+  /// No description provided for @symHistory.
+  ///
+  /// In pt, this message translates to:
+  /// **'Histórico recente'**
+  String get symHistory;
+
+  /// No description provided for @symHistoryEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhum sintoma registrado.'**
+  String get symHistoryEmpty;
+
+  /// No description provided for @symSafety.
+  ///
+  /// In pt, this message translates to:
+  /// **'Em caso de vômito persistente, dor abdominal intensa ou sintomas que preocupem, procure sua equipe de saúde.'**
+  String get symSafety;
+
+  /// No description provided for @daysAfterDose.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia {n} após a aplicação'**
+  String daysAfterDose(int n);
+
+  /// No description provided for @dayN.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia {n}'**
+  String dayN(int n);
+
+  /// No description provided for @weightTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Evolução do peso'**
+  String get weightTitle;
+
+  /// No description provided for @weightCurrent.
+  ///
+  /// In pt, this message translates to:
+  /// **'Peso atual'**
+  String get weightCurrent;
+
+  /// No description provided for @weightTotal.
+  ///
+  /// In pt, this message translates to:
+  /// **'{diff} kg total'**
+  String weightTotal(String diff);
+
+  /// No description provided for @weightStart.
+  ///
+  /// In pt, this message translates to:
+  /// **'Início: {kg} kg'**
+  String weightStart(String kg);
+
+  /// No description provided for @weightLogToday.
+  ///
+  /// In pt, this message translates to:
+  /// **'Registrar peso de hoje'**
+  String get weightLogToday;
+
+  /// No description provided for @weightEvolution.
+  ///
+  /// In pt, this message translates to:
+  /// **'Evolução'**
+  String get weightEvolution;
+
+  /// No description provided for @weightFluctuation.
+  ///
+  /// In pt, this message translates to:
+  /// **'Oscilações de 0,5 a 1 kg entre dias são comuns e costumam refletir água e intestino.'**
+  String get weightFluctuation;
+
+  /// No description provided for @weightHistory.
+  ///
+  /// In pt, this message translates to:
+  /// **'Histórico de pesagens'**
+  String get weightHistory;
 }
 
 class _AppLocalizationsDelegate

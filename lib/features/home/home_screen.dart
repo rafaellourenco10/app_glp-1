@@ -85,6 +85,31 @@ class HomeScreen extends ConsumerWidget {
           ]),
         ),
         const SizedBox(height: 16),
+        Row(children: [
+          for (final (icon, label, onTap) in [
+            (Icons.sick_outlined, l.homeLogSymptom, () => shell?.goTo(2)),
+            (Icons.scale_outlined, l.homeLogWeight, () => context.push('/weight')),
+            (Icons.fitness_center, l.homeLogWorkout, () => shell?.goTo(3)),
+          ])
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 4),
+                child: OutlinedButton(
+                  onPressed: onTap,
+                  style: OutlinedButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(horizontal: 4),
+                    backgroundColor: c.surfaceContainerLowest,
+                    textStyle: t.labelMedium,
+                  ),
+                  child: Column(mainAxisSize: MainAxisSize.min, children: [
+                    Icon(icon, size: 20),
+                    Text(label, textAlign: TextAlign.center),
+                  ]),
+                ),
+              ),
+            ),
+        ]),
+        const SizedBox(height: 16),
         Text(l.disclaimer, textAlign: TextAlign.center, style: t.labelSmall?.copyWith(color: c.outline)),
       ]),
     );
