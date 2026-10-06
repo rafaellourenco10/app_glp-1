@@ -7,7 +7,6 @@
   "retry": "Tentar novamente",
   "save": "Salvar",
   "cancel": "Cancelar",
-
   "loginBadge": "Seu espaço seguro",
   "loginSubtitle": "Um apoio diário, acolhedor e sem julgamentos na sua jornada com a medicação.",
   "loginEmailLabel": "Entrar com e-mail",
@@ -16,5 +15,73 @@
   "loginLinkSent": "Enviamos um link de acesso para o seu e-mail.",
   "loginOr": "ou",
   "loginApple": "Continuar com Apple",
-  "loginGoogle": "Continuar com Google"
+  "loginGoogle": "Continuar com Google",
+  "adjust": "Ajustar",
+  "weekdaysShort": "Seg,Ter,Qua,Qui,Sex,Sáb,Dom",
+  "medOther": "Outro",
+  "proteinReference": "Valor de referência, converse com seu profissional de saúde.",
+  "obStepOf": "Etapa {n} de 4",
+  "@obStepOf": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "obContinue": "Continuar",
+  "obStart": "Começar",
+  "obWelcomeTitle": "Bem-vindo ao Companheiro GLP-1",
+  "obPrivacyTitle": "Privacidade em primeiro lugar",
+  "obPrivacySubtitle": "Controle total dos seus registros",
+  "obPrivacyBody": "Seus dados de saúde são privados e apenas você tem acesso a cada medição e nota registrada.",
+  "obPrivacy1": "Criptografia em repouso e em trânsito",
+  "obPrivacy2": "Seus registros nunca são compartilhados ou vendidos",
+  "obPrivacy3": "Exclusão da sua conta e de todos os dados a qualquer momento",
+  "obConsent": "Autorizo o tratamento dos meus dados de saúde (peso, doses, sintomas e alimentação) exclusivamente para o funcionamento deste diário, conforme a LGPD, e reconheço o aviso de saúde acima.",
+  "obConsentRequired": "Obrigatório para iniciar o diário",
+  "obAboutTitle": "Conte um pouco sobre você",
+  "obAboutSubtitle": "Essas informações aparecem no seu diário e servem de base para sua meta de proteína.",
+  "obName": "Nome ou como quer ser chamado(a)",
+  "obNameHint": "Marina",
+  "obBirthYear": "Ano de nascimento",
+  "obHeight": "Altura",
+  "obWeight": "Peso atual",
+  "obPrivacyNote": "Seus dados de saúde são privados. Você pode editá-los ou excluí-los a qualquer momento no Perfil.",
+  "obMedTitle": "Qual é a sua medicação?",
+  "obMedSubtitle": "O lembrete semanal segue exatamente o dia e o horário que você escolher.",
+  "obMedLabel": "Medicação prescrita",
+  "obDoseLabel": "Dose (como está na sua receita)",
+  "obDoseHint": "Ex: 0,5 mg",
+  "obDoseHelper": "Copie da caneta ou da prescrição médica.",
+  "obWeekdayLabel": "Dia da aplicação semanal",
+  "obTimeLabel": "Horário do lembrete",
+  "obReminderNote": "Você poderá mudar o dia, o horário e a dose depois, em Doses.",
+  "obProteinTitle": "Sua meta de proteína",
+  "obProteinSubtitle": "Sugerimos como ponto de partida 1,2 g por kg de peso. Ajuste como preferir.",
+  "obProteinTarget": "Meta diária",
+  "obProteinRatio": "Aprox. {ratio} g por kg de peso",
+  "@obProteinRatio": {
+    "placeholders": {
+      "ratio": {
+        "type": "String"
+      }
+    }
+  },
+  "obProteinStep": "Passo de 5 g",
+  "obProteinLess": "Diminuir 5 g",
+  "obProteinMore": "Aumentar 5 g",
+  "tabToday": "Hoje",
+  "tabProtein": "Proteína",
+  "tabSymptoms": "Sintomas",
+  "tabWorkouts": "Treinos",
+  "tabProfile": "Perfil",
+  "homeGreeting": "Olá, {name}",
+  "@homeGreeting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeHowAreYou": "Como você está se sentindo hoje?"
 }

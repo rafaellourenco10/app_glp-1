@@ -6,7 +6,11 @@ import 'package:go_router/go_router.dart';
 import 'core/l10n/app_localizations.dart';
 import 'core/supabase/supabase.dart';
 import 'core/theme/theme.dart';
+import 'core/theme/widgets.dart';
 import 'features/auth/login_screen.dart';
+import 'features/home/home_shell.dart';
+import 'features/onboarding/onboarding_repository.dart';
+import 'features/onboarding/onboarding_screen.dart';
 
 final _router = GoRouter(routes: [
   GoRoute(path: '/', builder: (_, _) => const Gate()),
@@ -41,6 +45,10 @@ class Gate extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     if (ref.watch(userIdProvider) == null) return const LoginScreen();
-    return const Scaffold(body: Center(child: Text('OK')));
+    return ref.watch(profileProvider).when(
+          data: (p) => p == null ? const OnboardingScreen() : const HomeShell(),
+          loading: () => const Scaffold(body: Center(child: CircularProgressIndicator())),
+          error: (_, _) => Scaffold(body: Center(child: ErrorRetry(onRetry: () => ref.invalidate(profileProvider)))),
+        );
   }
 }

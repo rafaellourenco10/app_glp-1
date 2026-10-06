@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../l10n/app_localizations.dart';
+import '../l10n/format.dart';
 
 /// Card branco, raio 20, padding 20 (padrão das telas).
 class SectionCard extends StatelessWidget {
@@ -110,3 +111,58 @@ class ErrorRetry extends StatelessWidget {
 /// Atalho: SnackBar de erro amigável para falhas de escrita.
 void showError(BuildContext context) => ScaffoldMessenger.of(context)
     .showSnackBar(SnackBar(content: Text(AppLocalizations.of(context).errorSave)));
+
+/// Seletor Dom..Sáb. Valor em ISO weekday (1=seg..7=dom).
+class WeekdayPicker extends StatelessWidget {
+  const WeekdayPicker({super.key, required this.value, required this.onChanged});
+  final int value;
+  final ValueChanged<int> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    final names = AppLocalizations.of(context).weekdaysShort.split(',');
+    return Wrap(spacing: 6, runSpacing: 6, children: [
+      for (final d in const [7, 1, 2, 3, 4, 5, 6])
+        ChoiceChip(
+          label: Text(names[d - 1]),
+          selected: d == value,
+          onSelected: (_) => onChanged(d),
+        ),
+    ]);
+  }
+}
+
+/// Linha com horário + botão "Ajustar" que abre o seletor.
+class TimeTile extends StatelessWidget {
+  const TimeTile({super.key, required this.value, required this.onChanged});
+  final TimeOfDay value;
+  final ValueChanged<TimeOfDay> onChanged;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = Theme.of(context).colorScheme;
+    final t = Theme.of(context).textTheme;
+    final l = AppLocalizations.of(context);
+    return SectionCard(
+      padding: const EdgeInsets.all(12),
+      child: Row(children: [
+        Container(
+          width: 48,
+          height: 48,
+          decoration: BoxDecoration(color: c.surfaceContainer, borderRadius: BorderRadius.circular(12)),
+          child: Icon(Icons.schedule, color: c.primary),
+        ),
+        const SizedBox(width: 12),
+        Expanded(child: Text(fmtTime(value), style: t.headlineSmall)),
+        TextButton.icon(
+          onPressed: () async {
+            final picked = await showTimePicker(context: context, initialTime: value);
+            if (picked != null) onChanged(picked);
+          },
+          icon: const Icon(Icons.tune, size: 18),
+          label: Text(l.adjust),
+        ),
+      ]),
+    );
+  }
+}

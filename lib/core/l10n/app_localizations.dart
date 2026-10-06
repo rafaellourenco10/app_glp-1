@@ -189,6 +189,288 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Continuar com Google'**
   String get loginGoogle;
+
+  /// No description provided for @adjust.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ajustar'**
+  String get adjust;
+
+  /// No description provided for @weekdaysShort.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seg,Ter,Qua,Qui,Sex,Sáb,Dom'**
+  String get weekdaysShort;
+
+  /// No description provided for @medOther.
+  ///
+  /// In pt, this message translates to:
+  /// **'Outro'**
+  String get medOther;
+
+  /// No description provided for @proteinReference.
+  ///
+  /// In pt, this message translates to:
+  /// **'Valor de referência, converse com seu profissional de saúde.'**
+  String get proteinReference;
+
+  /// No description provided for @obStepOf.
+  ///
+  /// In pt, this message translates to:
+  /// **'Etapa {n} de 4'**
+  String obStepOf(int n);
+
+  /// No description provided for @obContinue.
+  ///
+  /// In pt, this message translates to:
+  /// **'Continuar'**
+  String get obContinue;
+
+  /// No description provided for @obStart.
+  ///
+  /// In pt, this message translates to:
+  /// **'Começar'**
+  String get obStart;
+
+  /// No description provided for @obWelcomeTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Bem-vindo ao Companheiro GLP-1'**
+  String get obWelcomeTitle;
+
+  /// No description provided for @obPrivacyTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Privacidade em primeiro lugar'**
+  String get obPrivacyTitle;
+
+  /// No description provided for @obPrivacySubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Controle total dos seus registros'**
+  String get obPrivacySubtitle;
+
+  /// No description provided for @obPrivacyBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seus dados de saúde são privados e apenas você tem acesso a cada medição e nota registrada.'**
+  String get obPrivacyBody;
+
+  /// No description provided for @obPrivacy1.
+  ///
+  /// In pt, this message translates to:
+  /// **'Criptografia em repouso e em trânsito'**
+  String get obPrivacy1;
+
+  /// No description provided for @obPrivacy2.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seus registros nunca são compartilhados ou vendidos'**
+  String get obPrivacy2;
+
+  /// No description provided for @obPrivacy3.
+  ///
+  /// In pt, this message translates to:
+  /// **'Exclusão da sua conta e de todos os dados a qualquer momento'**
+  String get obPrivacy3;
+
+  /// No description provided for @obConsent.
+  ///
+  /// In pt, this message translates to:
+  /// **'Autorizo o tratamento dos meus dados de saúde (peso, doses, sintomas e alimentação) exclusivamente para o funcionamento deste diário, conforme a LGPD, e reconheço o aviso de saúde acima.'**
+  String get obConsent;
+
+  /// No description provided for @obConsentRequired.
+  ///
+  /// In pt, this message translates to:
+  /// **'Obrigatório para iniciar o diário'**
+  String get obConsentRequired;
+
+  /// No description provided for @obAboutTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conte um pouco sobre você'**
+  String get obAboutTitle;
+
+  /// No description provided for @obAboutSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Essas informações aparecem no seu diário e servem de base para sua meta de proteína.'**
+  String get obAboutSubtitle;
+
+  /// No description provided for @obName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nome ou como quer ser chamado(a)'**
+  String get obName;
+
+  /// No description provided for @obNameHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Marina'**
+  String get obNameHint;
+
+  /// No description provided for @obBirthYear.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ano de nascimento'**
+  String get obBirthYear;
+
+  /// No description provided for @obHeight.
+  ///
+  /// In pt, this message translates to:
+  /// **'Altura'**
+  String get obHeight;
+
+  /// No description provided for @obWeight.
+  ///
+  /// In pt, this message translates to:
+  /// **'Peso atual'**
+  String get obWeight;
+
+  /// No description provided for @obPrivacyNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seus dados de saúde são privados. Você pode editá-los ou excluí-los a qualquer momento no Perfil.'**
+  String get obPrivacyNote;
+
+  /// No description provided for @obMedTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Qual é a sua medicação?'**
+  String get obMedTitle;
+
+  /// No description provided for @obMedSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'O lembrete semanal segue exatamente o dia e o horário que você escolher.'**
+  String get obMedSubtitle;
+
+  /// No description provided for @obMedLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Medicação prescrita'**
+  String get obMedLabel;
+
+  /// No description provided for @obDoseLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dose (como está na sua receita)'**
+  String get obDoseLabel;
+
+  /// No description provided for @obDoseHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ex: 0,5 mg'**
+  String get obDoseHint;
+
+  /// No description provided for @obDoseHelper.
+  ///
+  /// In pt, this message translates to:
+  /// **'Copie da caneta ou da prescrição médica.'**
+  String get obDoseHelper;
+
+  /// No description provided for @obWeekdayLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia da aplicação semanal'**
+  String get obWeekdayLabel;
+
+  /// No description provided for @obTimeLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Horário do lembrete'**
+  String get obTimeLabel;
+
+  /// No description provided for @obReminderNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você poderá mudar o dia, o horário e a dose depois, em Doses.'**
+  String get obReminderNote;
+
+  /// No description provided for @obProteinTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua meta de proteína'**
+  String get obProteinTitle;
+
+  /// No description provided for @obProteinSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sugerimos como ponto de partida 1,2 g por kg de peso. Ajuste como preferir.'**
+  String get obProteinSubtitle;
+
+  /// No description provided for @obProteinTarget.
+  ///
+  /// In pt, this message translates to:
+  /// **'Meta diária'**
+  String get obProteinTarget;
+
+  /// No description provided for @obProteinRatio.
+  ///
+  /// In pt, this message translates to:
+  /// **'Aprox. {ratio} g por kg de peso'**
+  String obProteinRatio(String ratio);
+
+  /// No description provided for @obProteinStep.
+  ///
+  /// In pt, this message translates to:
+  /// **'Passo de 5 g'**
+  String get obProteinStep;
+
+  /// No description provided for @obProteinLess.
+  ///
+  /// In pt, this message translates to:
+  /// **'Diminuir 5 g'**
+  String get obProteinLess;
+
+  /// No description provided for @obProteinMore.
+  ///
+  /// In pt, this message translates to:
+  /// **'Aumentar 5 g'**
+  String get obProteinMore;
+
+  /// No description provided for @tabToday.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hoje'**
+  String get tabToday;
+
+  /// No description provided for @tabProtein.
+  ///
+  /// In pt, this message translates to:
+  /// **'Proteína'**
+  String get tabProtein;
+
+  /// No description provided for @tabSymptoms.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sintomas'**
+  String get tabSymptoms;
+
+  /// No description provided for @tabWorkouts.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treinos'**
+  String get tabWorkouts;
+
+  /// No description provided for @tabProfile.
+  ///
+  /// In pt, this message translates to:
+  /// **'Perfil'**
+  String get tabProfile;
+
+  /// No description provided for @homeGreeting.
+  ///
+  /// In pt, this message translates to:
+  /// **'Olá, {name}'**
+  String homeGreeting(String name);
+
+  /// No description provided for @homeHowAreYou.
+  ///
+  /// In pt, this message translates to:
+  /// **'Como você está se sentindo hoje?'**
+  String get homeHowAreYou;
 }
 
 class _AppLocalizationsDelegate
