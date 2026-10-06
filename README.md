@@ -55,6 +55,8 @@ flutter pub get
 flutter run --dart-define-from-file=.env
 ```
 
+No VS Code, basta apertar **F5**: o `.vscode/launch.json` já passa o `.env`. Sem o `.env`, o app abre numa tela avisando que a configuração está ausente.
+
 As chaves são lidas em tempo de compilação (`String.fromEnvironment`). O `.env` está no `.gitignore`.
 
 ## 3. Notificação semanal da dose
