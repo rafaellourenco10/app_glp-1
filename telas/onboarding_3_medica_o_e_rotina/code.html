@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#005c55", "surface-bright": "#fbf9f6", "on-background": "#1b1c1a", "on-surface-variant": "#3e4947", "secondary-container": "#6df5e1", "on-error": "#ffffff", "on-secondary": "#ffffff", "on-tertiary-container": "#ffe5dc", "surface-dim": "#dbdad7", "error": "#ba1a1a", "on-primary-container": "#a3faef", "primary-container": "#0f766e", "on-secondary-fixed": "#00201c", "inverse-surface": "#30312f", "tertiary-container": "#b94200", "surface-container-highest": "#e4e2df", "inverse-on-surface": "#f2f0ed", "secondary": "#006b5f", "on-surface": "#1b1c1a", "on-secondary-fixed-variant": "#005048", "primary-fixed-dim": "#80d5cb", "surface-container-low": "#f5f3f0", "surface": "#fbf9f6", "background": "#fbf9f6", "surface-variant": "#e4e2df", "surface-container-lowest": "#ffffff", "inverse-primary": "#80d5cb", "primary-fixed": "#9cf2e8", "tertiary": "#913200", "tertiary-fixed": "#ffdbce", "tertiary-fixed-dim": "#ffb599", "on-error-container": "#93000a", "surface-container-high": "#eae8e5", "on-primary-fixed": "#00201d", "on-primary-fixed-variant": "#00504a", "surface-container": "#efeeeb", "secondary-fixed": "#71f8e4", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#7f2b00", "outline": "#6e7977", "on-tertiary-fixed": "#370e00", "on-tertiary": "#ffffff", "on-secondary-container": "#006f64", "on-primary": "#ffffff", "secondary-fixed-dim": "#4fdbc8", "outline-variant": "#bdc9c6", "surface-tint": "#006a63" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "gutter": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-lg": "1.25rem", "margin": "1.25rem", "space-xs": "0.25rem" }, fontFamily: { "headline-sm": ["Manrope"], "metric-display": ["Manrope"], "body-md": ["Manrope"], "metric-label": ["Manrope"], "display-lg": ["Manrope"], "label-sm": ["Manrope"], "title-md": ["Manrope"], "body-lg": ["Manrope"], "headline-lg": ["Manrope"], "label-md": ["Manrope"] }, fontSize: { "headline-sm": ["20px", {"lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "metric-display": ["38px", {"lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "metric-label": ["13px", {"lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600"}], "display-lg": ["34px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600"}], "title-md": ["17px", {"lineHeight": "24px", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "headline-lg": ["26px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "label-md": ["13px", {"lineHeight": "18px", "fontWeight": "500"}] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;background-color:#fbf9f6;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><button aria-label="Go back" class="w-11 h-11 -ml-space-xs rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div aria-label="Onboarding progress" class="flex-1 max-w-[200px] flex items-center justify-center gap-1.5 px-space-xs" role="progressbar"><div class="h-1.5 flex-1 rounded-full bg-primary"></div><div class="h-1.5 flex-1 rounded-full bg-primary/25"></div><div class="h-1.5 flex-1 rounded-full bg-primary/15"></div><div class="h-1.5 flex-1 rounded-full bg-primary/10"></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface pb-safe"><div class="flex flex-col w-full px-margin pb-8">
+<div class="flex items-center justify-between py-space-sm mb-space-xs">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+      Etapa 3 de 4
+    </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80">Quase lá</span>
+</div>
+<div class="space-y-space-xs mb-space-lg">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Qual é a sua medicação?</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Configuramos os lembretes do dia e hora exatos da sua aplicação semanal.</p>
+</div>
+<div class="relative w-full rounded-2xl overflow-hidden mb-space-lg shadow-sm bg-surface-container-low p-space-md flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="A minimalist, warm still life of modern pre-filled medication pens and soft botanical leaves on an organic textured linen cloth, bathed in gentle morning sunlight with soft mint and warm cream accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO3o3YepGhvJ275HQ2ytaZ4htk1By2Y55Ds0Kci6pI6jyVEWvn9DpmLjduN346r5jNEDDX3jjpfC6XEUE-PIhB_1KeKZ0Zen_vjCnkXTcTabMIe6ZUPceVf5ZSez9y66oy0DxxhuqwB77eEtQVT0ujHK9PvhkS0ZXevJhdbstnRtbpI-Zai-dR_4imdkKbjnm8Xki7GC4TqM-9nJERqR7KPWgSWXbxIyIQNWylPAwE"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="inline-flex items-center gap-1 text-primary font-label-sm text-label-sm mb-0.5">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+<span>Acompanhamento Seguro</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-semibold truncate">Rotina guiada e calibrada</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Seus dados ajustam os alertas clínicos de reposição e hidratação.</p>
+</div>
+</div>
+<form class="space-y-space-lg" onsubmit="event.preventDefault();">
+<div class="space-y-space-xs">
+<label class="block font-label-md text-label-md text-on-surface" for="medication-select">Medicação prescrita</label>
+<div class="relative w-full">
+<div class="w-full h-[52px] px-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between cursor-pointer" id="med-dropdown-trigger" onclick="toggleDropdown()">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-secondary-container/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">vaccines</span>
+</div>
+<span class="font-body-lg text-body-lg font-semibold text-on-surface truncate" id="selected-medication-text">Ozempic</span>
+</div>
+<span class="material-symbols-outlined text-outline transition-transform duration-200" id="dropdown-chevron">expand_more</span>
+</div>
+<div class="hidden absolute top-full left-0 right-0 mt-2 z-30 bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden p-1.5 space-y-1" id="med-dropdown-options">
+<button class="w-full px-3 py-2.5 rounded-xl text-left font-body-md text-body-md text-on-surface hover:bg-surface-container flex items-center justify-between transition-colors" onclick="selectMed('Ozempic')" type="button">
+<span>Ozempic (Semaglutida)</span>
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</button>
+<button class="w-full px-3 py-2.5 rounded-xl text-left font-body-md text-body-md text-on-surface hover:bg-surface-container flex items-center justify-between transition-colors" onclick="selectMed('Wegovy')" type="button">
+<span>Wegovy (Semaglutida)</span>
+</button>
+<button class="w-full px-3 py-2.5 rounded-xl text-left font-body-md text-body-md text-on-surface hover:bg-surface-container flex items-center justify-between transition-colors" onclick="selectMed('Mounjaro')" type="button">
+<span>Mounjaro (Tirzepatida)</span>
+</button>
+<button class="w-full px-3 py-2.5 rounded-xl text-left font-body-md text-body-md text-on-surface hover:bg-surface-container flex items-center justify-between transition-colors" onclick="selectMed('Zepbound')" type="button">
+<span>Zepbound (Tirzepatida)</span>
+</button>
+<button class="w-full px-3 py-2.5 rounded-xl text-left font-body-md text-body-md text-on-surface hover:bg-surface-container flex items-center justify-between transition-colors" onclick="selectMed('Saxenda')" type="button">
+<span>Saxenda (Liraglutida)</span>
+</button>
+<button class="w-full px-3 py-2.5 rounded-xl text-left font-body-md text-body-md text-on-surface hover:bg-surface-container flex items-center justify-between transition-colors" onclick="selectMed('Outro')" type="button">
+<span>Outro</span>
+</button>
+</div>
+</div>
+</div>
+<div class="space-y-space-xs">
+<label class="block font-label-md text-label-md text-on-surface" for="dose-input">Dose (como está na sua receita)</label>
+<div class="relative flex items-center">
+<input class="w-full h-[52px] pl-space-md pr-12 rounded-2xl bg-surface-container-lowest text-on-surface font-body-lg text-body-lg shadow-sm placeholder:text-outline/60 outline-none focus:bg-surface-container-lowest" id="dose-input" placeholder="Ex: 0,5 mg ou 2,5 mg" type="text" value="0,5 mg"/>
+<div class="absolute right-3.5 w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-outline">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 pl-1">
+<span class="material-symbols-outlined text-[14px] text-primary">info</span>
+        Verifique na caneta ou prescrição médica.
+      </p>
+</div>
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Dia da aplicação semanal</label>
+<span class="font-label-sm text-label-sm text-primary font-semibold">1x por semana</span>
+</div>
+<div aria-label="Dia da aplicação semanal" class="grid grid-cols-7 gap-1.5" id="weekday-selector" role="radiogroup">
+<button aria-checked="true" class="h-11 rounded-full flex flex-col items-center justify-center font-label-md text-label-md transition-all bg-primary-container text-on-primary shadow-sm" data-day="Dom" onclick="selectDay(this)" type="button">
+<span>Dom</span>
+</button>
+<button aria-checked="false" class="h-11 rounded-full flex flex-col items-center justify-center font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface-variant shadow-sm hover:bg-surface-container" data-day="Seg" onclick="selectDay(this)" type="button">
+<span>Seg</span>
+</button>
+<button aria-checked="false" class="h-11 rounded-full flex flex-col items-center justify-center font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface-variant shadow-sm hover:bg-surface-container" data-day="Ter" onclick="selectDay(this)" type="button">
+<span>Ter</span>
+</button>
+<button aria-checked="false" class="h-11 rounded-full flex flex-col items-center justify-center font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface-variant shadow-sm hover:bg-surface-container" data-day="Qua" onclick="selectDay(this)" type="button">
+<span>Qua</span>
+</button>
+<button aria-checked="false" class="h-11 rounded-full flex flex-col items-center justify-center font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface-variant shadow-sm hover:bg-surface-container" data-day="Qui" onclick="selectDay(this)" type="button">
+<span>Qui</span>
+</button>
+<button aria-checked="false" class="h-11 rounded-full flex flex-col items-center justify-center font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface-variant shadow-sm hover:bg-surface-container" data-day="Sex" onclick="selectDay(this)" type="button">
+<span>Sex</span>
+</button>
+<button aria-checked="false" class="h-11 rounded-full flex flex-col items-center justify-center font-label-md text-label-md transition-all bg-surface-container-lowest text-on-surface-variant shadow-sm hover:bg-surface-container" data-day="Sáb" onclick="selectDay(this)" type="button">
+<span>Sáb</span>
+</button>
+</div>
+</div>
+<div class="space-y-space-xs">
+<label class="block font-label-md text-label-md text-on-surface">Horário preferido para o lembrete</label>
+<div class="p-space-md rounded-2xl bg-surface-container-lowest shadow-sm flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">schedule</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">20:00</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Noite</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Recomendado à noite para repouso</p>
+</div>
+</div>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container font-label-sm text-label-sm text-primary font-semibold hover:bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+          Ajustar
+          <span class="material-symbols-outlined text-[14px]">tune</span>
+</button>
+</div>
+</div>
+<div class="p-space-md rounded-2xl bg-surface-container-low shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5 flex-shrink-0">spa</span>
+<div class="space-y-0.5">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Dica de tranquilidade</p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-snug">Tomar a medicação após uma refeição leve e antes de dormir ajuda a minimizar náuseas comuns nas primeiras semanas.</p>
+</div>
+</div>
+<div class="pt-space-sm">
+<button class="w-full h-[52px] rounded-2xl bg-primary-container text-on-primary font-title-md text-title-md font-semibold shadow-md active:scale-[0.98] transition-all flex items-center justify-center gap-2" onclick="celebrateAndContinue(this)" type="button">
+<span>Continuar</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<script>
+  function toggleDropdown() {
+    const menu = document.getElementById('med-dropdown-options');
+    const chevron = document.getElementById('dropdown-chevron');
+    const isHidden = menu.classList.contains('hidden');
+    if (isHidden) {
+      menu.classList.remove('hidden');
+      chevron.classList.add('rotate-180');
+    } else {
+      menu.classList.add('hidden');
+      chevron.classList.remove('rotate-180');
+    }
+  }
+
+  function selectMed(name) {
+    document.getElementById('selected-medication-text').textContent = name;
+    toggleDropdown();
+  }
+
+  function selectDay(btn) {
+    const parent = document.getElementById('weekday-selector');
+    const allButtons = parent.querySelectorAll('button');
+    allButtons.forEach(b => {
+      b.classList.remove('bg-primary-container', 'text-on-primary');
+      b.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+      b.setAttribute('aria-checked', 'false');
+    });
+    btn.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+    btn.classList.add('bg-primary-container', 'text-on-primary');
+    btn.setAttribute('aria-checked', 'true');
+  }
+
+  function celebrateAndContinue(button) {
+    button.classList.add('scale-95');
+    setTimeout(() => {
+      button.classList.remove('scale-95');
+    }, 150);
+  }
+
+  document.addEventListener('click', function(e) {
+    const trigger = document.getElementById('med-dropdown-trigger');
+    const menu = document.getElementById('med-dropdown-options');
+    if (trigger && menu && !trigger.contains(e.target) && !menu.contains(e.target)) {
+      menu.classList.add('hidden');
+      const chevron = document.getElementById('dropdown-chevron');
+      if (chevron) chevron.classList.remove('rotate-180');
+    }
+  });
+</script></main></body></html>

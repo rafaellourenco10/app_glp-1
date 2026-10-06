@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#005c55", "surface-bright": "#fbf9f6", "on-background": "#1b1c1a", "on-surface-variant": "#3e4947", "secondary-container": "#6df5e1", "on-error": "#ffffff", "on-secondary": "#ffffff", "on-tertiary-container": "#ffe5dc", "surface-dim": "#dbdad7", "error": "#ba1a1a", "on-primary-container": "#a3faef", "primary-container": "#0f766e", "on-secondary-fixed": "#00201c", "inverse-surface": "#30312f", "tertiary-container": "#b94200", "surface-container-highest": "#e4e2df", "inverse-on-surface": "#f2f0ed", "secondary": "#006b5f", "on-surface": "#1b1c1a", "on-secondary-fixed-variant": "#005048", "primary-fixed-dim": "#80d5cb", "surface-container-low": "#f5f3f0", "surface": "#fbf9f6", "background": "#fbf9f6", "surface-variant": "#e4e2df", "surface-container-lowest": "#ffffff", "inverse-primary": "#80d5cb", "primary-fixed": "#9cf2e8", "tertiary": "#913200", "tertiary-fixed": "#ffdbce", "tertiary-fixed-dim": "#ffb599", "on-error-container": "#93000a", "surface-container-high": "#eae8e5", "on-primary-fixed": "#00201d", "on-primary-fixed-variant": "#00504a", "surface-container": "#efeeeb", "secondary-fixed": "#71f8e4", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#7f2b00", "outline": "#6e7977", "on-tertiary-fixed": "#370e00", "on-tertiary": "#ffffff", "on-secondary-container": "#006f64", "on-primary": "#ffffff", "secondary-fixed-dim": "#4fdbc8", "outline-variant": "#bdc9c6", "surface-tint": "#006a63" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "gutter": "1rem", "space-xl": "2rem", "space-sm": "0.5rem", "space-lg": "1.25rem", "margin": "1.25rem", "space-xs": "0.25rem" }, fontFamily: { "headline-sm": ["Manrope"], "metric-display": ["Manrope"], "body-md": ["Manrope"], "metric-label": ["Manrope"], "display-lg": ["Manrope"], "label-sm": ["Manrope"], "title-md": ["Manrope"], "body-lg": ["Manrope"], "headline-lg": ["Manrope"], "label-md": ["Manrope"] }, fontSize: { "headline-sm": ["20px", {"lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "metric-display": ["38px", {"lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700"}], "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}], "metric-label": ["13px", {"lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "600"}], "display-lg": ["34px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "600"}], "title-md": ["17px", {"lineHeight": "24px", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "400"}], "headline-lg": ["26px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "label-md": ["13px", {"lineHeight": "18px", "fontWeight": "500"}] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;background-color:#fbf9f6;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><button aria-label="Go back" class="w-11 h-11 -ml-space-xs rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><div aria-label="Onboarding progress" class="flex-1 max-w-[200px] flex items-center justify-center gap-1.5 px-space-xs" role="progressbar"><div class="h-1.5 flex-1 rounded-full bg-primary"></div><div class="h-1.5 flex-1 rounded-full bg-primary/25"></div><div class="h-1.5 flex-1 rounded-full bg-primary/15"></div><div class="h-1.5 flex-1 rounded-full bg-primary/10"></div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface pb-safe"><div class="flex flex-col w-full pb-32">
+<!-- Status & Session Hero Card -->
+<section class="px-margin pt-space-md">
+<div class="bg-surface-container-lowest rounded-[20px] p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Title & Comfort Tag -->
+<div class="flex items-center justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-primary uppercase tracking-wider">Treino em Andamento</span>
+<h1 class="font-title-md text-on-surface truncate">Corpo todo A • Em casa</h1>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-low px-3 py-1 rounded-full shrink-0">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-on-surface-variant">Ritmo moderado</span>
+</div>
+</div>
+<!-- Chronometer Display -->
+<div class="bg-surface-container-low rounded-2xl p-space-md flex items-center justify-between">
+<div class="flex items-baseline gap-2">
+<span class="font-metric-display text-on-surface tracking-tight" id="session-timer">14:25</span>
+<span class="font-label-md text-on-surface-variant">tempo ativo</span>
+</div>
+<button aria-label="Pausar ou retomar cronômetro" class="w-12 h-12 rounded-full bg-surface-container-lowest text-primary shadow-sm flex items-center justify-center active:scale-95 transition-transform" id="timer-toggle-btn" type="button">
+<span class="material-symbols-outlined text-[26px]" id="timer-icon">pause</span>
+</button>
+</div>
+<!-- Progress Tracking -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-md text-on-surface-variant">
+<span>1 de 3 exercícios concluídos</span>
+<span class="font-title-md text-primary">33%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full transition-all duration-300" style="width: 33.33%;"></div>
+</div>
+</div>
+<!-- Micro hydration banner -->
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">water_drop</span>
+<span>Beba pequenos goles de água entre os movimentos.</span>
+</div>
+</div>
+</section>
+<!-- Exercise Track List -->
+<section class="px-margin pt-space-lg flex flex-col gap-space-md">
+<!-- Exercise 1: Agachamento (Concluído) -->
+<article class="bg-surface-container-lowest rounded-[20px] p-space-lg shadow-sm flex flex-col gap-space-sm opacity-95">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/40 text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">fitness_center</span>
+</div>
+<div>
+<h2 class="font-title-md text-on-surface">Agachamento</h2>
+<p class="font-label-md text-on-surface-variant">3 séries × 12 repetições</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 bg-primary-fixed/50 text-on-primary-fixed-variant px-2.5 py-1 rounded-full font-label-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+          Concluído
+        </span>
+</div>
+<p class="font-body-md text-on-surface-variant bg-surface-container-low/60 rounded-xl p-3">
+        Dica: Pés na largura dos ombros, desça suave com controle no quadril.
+      </p>
+<!-- Sets Row -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm flex items-center justify-center">1</span>
+<span class="font-body-md text-on-surface">12 repetições</span>
+</div>
+<button aria-label="Série 1 concluída" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-xl bg-primary text-on-primary" type="button">
+<span class="material-symbols-outlined text-[22px]">done</span>
+</button>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm flex items-center justify-center">2</span>
+<span class="font-body-md text-on-surface">12 repetições</span>
+</div>
+<button aria-label="Série 2 concluída" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-xl bg-primary text-on-primary" type="button">
+<span class="material-symbols-outlined text-[22px]">done</span>
+</button>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm flex items-center justify-center">3</span>
+<span class="font-body-md text-on-surface">12 repetições</span>
+</div>
+<button aria-label="Série 3 concluída" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-xl bg-primary text-on-primary" type="button">
+<span class="material-symbols-outlined text-[22px]">done</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Exercise 2: Remada com elástico (Em andamento) -->
+<article class="bg-surface-container-lowest rounded-[20px] p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">accessibility_new</span>
+</div>
+<div>
+<h2 class="font-title-md text-on-surface">Remada com elástico</h2>
+<p class="font-label-md text-on-surface-variant">3 séries × 12 repetições</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 bg-surface-container text-on-surface-variant px-2.5 py-1 rounded-full font-label-sm">
+          Série 2 de 3
+        </span>
+</div>
+<p class="font-body-md text-on-surface-variant bg-surface-container-low/60 rounded-xl p-3">
+        Dica: Cotovelos próximos ao tronco, ative as escápulas sem tensionar o pescoço.
+      </p>
+<!-- Sets Row -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm flex items-center justify-center">1</span>
+<span class="font-body-md text-on-surface">12 repetições</span>
+</div>
+<button aria-label="Série 1 concluída" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-xl bg-primary text-on-primary" type="button">
+<span class="material-symbols-outlined text-[22px]">done</span>
+</button>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-secondary-container/20">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary font-label-sm flex items-center justify-center">2</span>
+<span class="font-title-md text-on-surface">12 repetições</span>
+<span class="font-label-sm text-primary font-medium">(atual)</span>
+</div>
+<button aria-label="Concluir série 2" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-xl bg-surface-container text-on-surface-variant active:scale-95 transition-all" id="set-row-2-btn" type="button">
+<span class="material-symbols-outlined text-[24px]">radio_button_unchecked</span>
+</button>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm flex items-center justify-center">3</span>
+<span class="font-body-md text-on-surface-variant">12 repetições</span>
+</div>
+<button aria-label="Série 3 pendente" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-xl bg-surface-container-high text-outline" type="button">
+<span class="material-symbols-outlined text-[24px]">radio_button_unchecked</span>
+</button>
+</div>
+</div>
+<!-- Rest timer quick trigger -->
+<div class="pt-2 flex items-center justify-between bg-surface-container-low rounded-2xl p-3">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-[20px]">timer</span>
+<span class="font-label-md">Pausa recomendada: <strong>45s</strong></span>
+</div>
+<button class="h-10 px-4 rounded-full bg-primary-container text-on-primary font-label-md flex items-center gap-1.5 shadow-sm active:scale-95 transition-transform" id="rest-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">hourglass_top</span>
+<span id="rest-label">Descansar 45s</span>
+</button>
+</div>
+</article>
+<!-- Exercise 3: Flexão Inclinada -->
+<article class="bg-surface-container-lowest rounded-[20px] p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-surface-container text-on-surface-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">self_improvement</span>
+</div>
+<div>
+<h2 class="font-title-md text-on-surface">Flexão inclinada</h2>
+<p class="font-label-md text-on-surface-variant">3 séries × 10 repetições</p>
+</div>
+</div>
+<span class="inline-flex items-center bg-surface-container-low text-on-surface-variant px-2.5 py-1 rounded-full font-label-sm">
+          A seguir
+        </span>
+</div>
+<p class="font-body-md text-on-surface-variant bg-surface-container-low/60 rounded-xl p-3">
+        Dica: Apoio nas mãos em sofá ou banco firme para reduzir sobrecarga nas articulações.
+      </p>
+<!-- Sets Row -->
+<div class="flex flex-col gap-2 pt-1">
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm flex items-center justify-center">1</span>
+<span class="font-body-md text-on-surface">10 repetições</span>
+</div>
+<button aria-label="Série 1 da flexão inclinada pendente" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-xl bg-surface-container-high text-outline" type="button">
+<span class="material-symbols-outlined text-[24px]">radio_button_unchecked</span>
+</button>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm flex items-center justify-center">2</span>
+<span class="font-body-md text-on-surface">10 repetições</span>
+</div>
+<button aria-label="Série 2 da flexão inclinada pendente" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-xl bg-surface-container-high text-outline" type="button">
+<span class="material-symbols-outlined text-[24px]">radio_button_unchecked</span>
+</button>
+</div>
+<div class="flex items-center justify-between p-2.5 rounded-xl bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm flex items-center justify-center">3</span>
+<span class="font-body-md text-on-surface">10 repetições</span>
+</div>
+<button aria-label="Série 3 da flexão inclinada pendente" class="min-w-[48px] min-h-[48px] flex items-center justify-center rounded-xl bg-surface-container-high text-outline" type="button">
+<span class="material-symbols-outlined text-[24px]">radio_button_unchecked</span>
+</button>
+</div>
+</div>
+</article>
+<!-- GLP-1 Metabolic Care Guidance Card -->
+<aside class="bg-surface-container-low rounded-[20px] p-space-lg flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center shrink-0 text-on-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">health_and_safety</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<h3 class="font-title-md text-on-surface">Sentiu tontura ou náusea súbita?</h3>
+<p class="font-body-md text-on-surface-variant">
+          Em uso de GLP-1, pausas de 60 a 90 segundos entre séries ajudam a regular a pressão e manter o fluxo respiratório tranquilo.
+        </p>
+</div>
+</aside>
+</section>
+<!-- Sticky Bottom Actions -->
+<footer class="fixed bottom-0 left-0 right-0 z-40 bg-surface/90 backdrop-blur-lg px-margin pb-safe pt-space-sm shadow-[0_-8px_24px_rgba(0,0,0,0.06)]">
+<div class="max-w-[420px] mx-auto flex flex-col gap-2">
+<button class="w-full h-[52px] rounded-full bg-primary-container text-on-primary font-title-md flex items-center justify-center gap-2 shadow-md active:scale-[0.98] transition-transform" type="button">
+<span class="material-symbols-outlined text-[22px]">check_circle</span>
+        Finalizar treino
+      </button>
+<div class="flex items-center justify-center gap-6 py-1">
+<button class="font-label-md text-on-surface-variant hover:text-on-surface py-2" type="button">
+          Pausar sessão
+        </button>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<button class="font-label-md text-error hover:opacity-80 py-2" type="button">
+          Descartar treino
+        </button>
+</div>
+</div>
+</footer>
+</div>
+<script>
+  (() => {
+    // Chronometer micro-interaction
+    let seconds = 14 * 60 + 25;
+    let running = true;
+    const timerEl = document.getElementById('session-timer');
+    const toggleBtn = document.getElementById('timer-toggle-btn');
+    const iconEl = document.getElementById('timer-icon');
+
+    const updateDisplay = () => {
+      const mins = Math.floor(seconds / 60).toString().padStart(2, '0');
+      const secs = (seconds % 60).toString().padStart(2, '0');
+      if (timerEl) timerEl.textContent = `${mins}:${secs}`;
+    };
+
+    const interval = setInterval(() => {
+      if (running) {
+        seconds += 1;
+        updateDisplay();
+      }
+    }, 1000);
+
+    toggleBtn?.addEventListener('click', () => {
+      running = !running;
+      if (iconEl) {
+        iconEl.textContent = running ? 'pause' : 'play_arrow';
+      }
+    });
+
+    // Set completion micro-interaction
+    const setBtn = document.getElementById('set-row-2-btn');
+    let setDone = false;
+    setBtn?.addEventListener('click', () => {
+      setDone = !setDone;
+      if (setDone) {
+        setBtn.className = 'min-w-[48px] min-h-[48px] flex items-center justify-center rounded-xl bg-primary text-on-primary active:scale-95 transition-all';
+        setBtn.innerHTML = '<span class="material-symbols-outlined text-[22px]">done</span>';
+      } else {
+        setBtn.className = 'min-w-[48px] min-h-[48px] flex items-center justify-center rounded-xl bg-surface-container text-on-surface-variant active:scale-95 transition-all';
+        setBtn.innerHTML = '<span class="material-symbols-outlined text-[24px]">radio_button_unchecked</span>';
+      }
+    });
+
+    // Rest quick countdown
+    const restBtn = document.getElementById('rest-btn');
+    const restLabel = document.getElementById('rest-label');
+    let restTimer = null;
+    let restLeft = 45;
+
+    restBtn?.addEventListener('click', () => {
+      if (restTimer) {
+        clearInterval(restTimer);
+        restTimer = null;
+        restLeft = 45;
+        if (restLabel) restLabel.textContent = 'Descansar 45s';
+        return;
+      }
+
+      restLeft = 45;
+      if (restLabel) restLabel.textContent = `Descanso: ${restLeft}s`;
+      restTimer = setInterval(() => {
+        restLeft -= 1;
+        if (restLeft <= 0) {
+          clearInterval(restTimer);
+          restTimer = null;
+          if (restLabel) restLabel.textContent = 'Pronto! Próxima série';
+        } else {
+          if (restLabel) restLabel.textContent = `Descanso: ${restLeft}s`;
+        }
+      }, 1000);
+    });
+  })();
+</script></main></body></html>
