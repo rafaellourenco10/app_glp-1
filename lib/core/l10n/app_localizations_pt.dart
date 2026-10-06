@@ -532,4 +532,100 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get weightHistory => 'Histórico de pesagens';
+
+  @override
+  String get levelBeginner => 'Iniciante';
+
+  @override
+  String get levelIntermediate => 'Intermediário';
+
+  @override
+  String get locHome => 'Em casa';
+
+  @override
+  String get locGym => 'Academia';
+
+  @override
+  String get workoutsTitle => 'Preserve sua massa muscular';
+
+  @override
+  String get workoutsSubtitle =>
+      'Treinos de força simples, em casa ou na academia.';
+
+  @override
+  String get workoutsWeeklyGoal => 'Meta semanal de força';
+
+  @override
+  String get workoutsSessionsDone => 'sessões nesta semana';
+
+  @override
+  String get workoutsGoalOk => 'Meta da semana (2 a 3 sessões) alcançada.';
+
+  @override
+  String get workoutsGoalHint => 'Meta: 2 a 3 sessões por semana.';
+
+  @override
+  String get workoutsWhy =>
+      'A perda de peso pode incluir massa muscular. Exercícios de força ajudam a preservá-la. Respeite seus limites e, em caso de dúvida, fale com seu profissional de saúde.';
+
+  @override
+  String get workoutsTemplates => 'Modelos de treino';
+
+  @override
+  String workoutsExerciseCount(int n) {
+    return '$n exercícios';
+  }
+
+  @override
+  String get workoutsStart => 'Iniciar treino';
+
+  @override
+  String get workoutsHistory => 'Histórico recente';
+
+  @override
+  String get workoutsHistoryEmpty => 'Nenhuma sessão registrada ainda.';
+
+  @override
+  String workoutsExercisesDone(int n) {
+    String _temp0 = intl.Intl.pluralLogic(
+      n,
+      locale: localeName,
+      other: '$n exercícios feitos',
+      one: '1 exercício feito',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get workoutsSafety =>
+      'Hidrate-se e respeite seus limites de energia durante a atividade.';
+
+  @override
+  String get sessionTitle => 'Treino em andamento';
+
+  @override
+  String sessionProgress(int done, int total) {
+    return '$done de $total exercícios concluídos';
+  }
+
+  @override
+  String setsReps(int sets, String reps) {
+    return '$sets séries × $reps';
+  }
+
+  @override
+  String get sessionSafety =>
+      'Sentiu tontura, náusea ou mal-estar? Pare e descanse. Se persistir, procure sua equipe de saúde.';
+
+  @override
+  String get sessionFinish => 'Finalizar treino';
+
+  @override
+  String get sessionDiscard => 'Descartar treino';
+
+  @override
+  String get homeWorkoutTitle => 'Treino sugerido de hoje';
+
+  @override
+  String get homeWorkoutStart => 'Começar';
 }

@@ -10,6 +10,8 @@ import '../doses/doses_screen.dart';
 import '../onboarding/onboarding_repository.dart';
 import '../protein/protein_repository.dart';
 import '../protein/protein_screen.dart';
+import '../workouts/workouts_repository.dart';
+import '../workouts/workouts_screen.dart';
 import 'home_shell.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -26,6 +28,10 @@ class HomeScreen extends ConsumerWidget {
     final now = DateTime.now();
     final totals = dailyTotals(ref.watch(proteinLogsProvider).value ?? const [], now);
     final shell = context.findAncestorStateOfType<HomeShellState>();
+    final workout = suggestedTemplate(
+      ref.watch(workoutTemplatesProvider).value ?? const [],
+      ref.watch(workoutSessionsProvider).value ?? const [],
+    );
     return RefreshIndicator(
       onRefresh: () async {
         ref.invalidate(treatmentProvider);
@@ -110,6 +116,28 @@ class HomeScreen extends ConsumerWidget {
             ),
         ]),
         const SizedBox(height: 16),
+        if (workout != null) ...[
+          SectionCard(
+            child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+              CardHeader(
+                icon: Icons.fitness_center,
+                tint: c.secondaryContainer.withValues(alpha: 0.6),
+                title: l.homeWorkoutTitle,
+                subtitle: '${workout.name} · ${levelLabel(l, workout.level)}',
+              ),
+              const SizedBox(height: 12),
+              Text(workout.exercises.map((e) => e.name).join(', '),
+                  maxLines: 2, overflow: TextOverflow.ellipsis, style: t.bodyMedium?.copyWith(color: c.onSurfaceVariant)),
+              const SizedBox(height: 16),
+              FilledButton.icon(
+                onPressed: () => context.push('/workout/${workout.id}'),
+                icon: const Icon(Icons.play_arrow),
+                label: Text(l.homeWorkoutStart),
+              ),
+            ]),
+          ),
+          const SizedBox(height: 16),
+        ],
         Text(l.disclaimer, textAlign: TextAlign.center, style: t.labelSmall?.copyWith(color: c.outline)),
       ]),
     );

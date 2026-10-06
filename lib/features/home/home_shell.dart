@@ -5,6 +5,7 @@ import '../../core/l10n/app_localizations.dart';
 import '../doses/doses_repository.dart';
 import '../protein/protein_screen.dart';
 import '../symptoms/symptoms_screen.dart';
+import '../workouts/workouts_screen.dart';
 import 'home_screen.dart';
 
 /// Barra inferior: Hoje · Proteína · Sintomas · Treinos · Perfil.
@@ -38,7 +39,7 @@ class HomeShellState extends ConsumerState<HomeShell> {
           HomeScreen(),
           ProteinScreen(),
           SymptomsScreen(),
-          SizedBox(),
+          WorkoutsScreen(),
           SizedBox(),
         ]),
       ),

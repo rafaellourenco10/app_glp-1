@@ -316,5 +316,65 @@
   "weightLogToday": "Registrar peso de hoje",
   "weightEvolution": "Evolução",
   "weightFluctuation": "Oscilações de 0,5 a 1 kg entre dias são comuns e costumam refletir água e intestino.",
-  "weightHistory": "Histórico de pesagens"
+  "weightHistory": "Histórico de pesagens",
+  "levelBeginner": "Iniciante",
+  "levelIntermediate": "Intermediário",
+  "locHome": "Em casa",
+  "locGym": "Academia",
+  "workoutsTitle": "Preserve sua massa muscular",
+  "workoutsSubtitle": "Treinos de força simples, em casa ou na academia.",
+  "workoutsWeeklyGoal": "Meta semanal de força",
+  "workoutsSessionsDone": "sessões nesta semana",
+  "workoutsGoalOk": "Meta da semana (2 a 3 sessões) alcançada.",
+  "workoutsGoalHint": "Meta: 2 a 3 sessões por semana.",
+  "workoutsWhy": "A perda de peso pode incluir massa muscular. Exercícios de força ajudam a preservá-la. Respeite seus limites e, em caso de dúvida, fale com seu profissional de saúde.",
+  "workoutsTemplates": "Modelos de treino",
+  "workoutsExerciseCount": "{n} exercícios",
+  "@workoutsExerciseCount": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "workoutsStart": "Iniciar treino",
+  "workoutsHistory": "Histórico recente",
+  "workoutsHistoryEmpty": "Nenhuma sessão registrada ainda.",
+  "workoutsExercisesDone": "{n, plural, =1{1 exercício feito} other{{n} exercícios feitos}}",
+  "@workoutsExercisesDone": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "workoutsSafety": "Hidrate-se e respeite seus limites de energia durante a atividade.",
+  "sessionTitle": "Treino em andamento",
+  "sessionProgress": "{done} de {total} exercícios concluídos",
+  "@sessionProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "setsReps": "{sets} séries × {reps}",
+  "@setsReps": {
+    "placeholders": {
+      "sets": {
+        "type": "int"
+      },
+      "reps": {
+        "type": "String"
+      }
+    }
+  },
+  "sessionSafety": "Sentiu tontura, náusea ou mal-estar? Pare e descanse. Se persistir, procure sua equipe de saúde.",
+  "sessionFinish": "Finalizar treino",
+  "sessionDiscard": "Descartar treino",
+  "homeWorkoutTitle": "Treino sugerido de hoje",
+  "homeWorkoutStart": "Começar"
 }

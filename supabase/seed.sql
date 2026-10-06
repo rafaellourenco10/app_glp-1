@@ -91,3 +91,42 @@ insert into public.foods (name, portion_label, protein_g) values
   ('Nozes', '1 punhado (30 g)', 4),
   ('Semente de abóbora', '1 col. sopa (15 g)', 4),
   ('Chia', '1 col. sopa (15 g)', 2);
+
+-- Treinos de força (4 modelos). Sem vídeos no MVP: texto + url opcional.
+insert into public.workout_templates (id, name, level, location) values
+  (1, 'Corpo todo em casa', 'iniciante', 'casa'),
+  (2, 'Corpo todo em casa', 'intermediario', 'casa'),
+  (3, 'Corpo todo na academia', 'iniciante', 'academia'),
+  (4, 'Corpo todo na academia', 'intermediario', 'academia');
+select setval('public.workout_templates_id_seq', 4);
+
+insert into public.workout_template_exercises (template_id, position, name, sets, reps, note) values
+  (1, 1, 'Agachamento livre (pode usar uma cadeira atrás)', 3, '12', 'Pés na largura dos ombros, desça com controle.'),
+  (1, 2, 'Flexão inclinada com apoio no sofá ou mesa', 3, '10', 'Corpo alinhado, cotovelos perto do tronco.'),
+  (1, 3, 'Remada com elástico ou mochila', 3, '12', 'Puxe levando os cotovelos para trás, sem tensionar o pescoço.'),
+  (1, 4, 'Ponte de glúteos', 3, '15', 'Suba o quadril contraindo os glúteos, desça devagar.'),
+  (1, 5, 'Elevação de panturrilha', 3, '15', 'Apoie-se na parede se precisar.'),
+  (1, 6, 'Prancha com joelhos no chão', 3, '20 s', 'Abdômen firme, respire normalmente.'),
+
+  (2, 1, 'Agachamento búlgaro', 3, '10 cada perna', 'Pé de trás apoiado em uma cadeira.'),
+  (2, 2, 'Flexão de braço', 3, '10', 'Se precisar, apoie os joelhos.'),
+  (2, 3, 'Remada unilateral com mochila ou halter', 3, '12 cada lado', 'Costas retas, apoio em um banco ou cadeira.'),
+  (2, 4, 'Afundo alternado', 3, '10 cada perna', 'Passo largo, joelho da frente alinhado com o pé.'),
+  (2, 5, 'Elevação pélvica unilateral', 3, '12 cada lado', 'Mantenha o quadril nivelado.'),
+  (2, 6, 'Superman', 3, '12', 'Deitado de bruços, eleve braços e pernas juntos.'),
+  (2, 7, 'Prancha', 3, '40 s', 'Corpo em linha reta, sem deixar o quadril cair.'),
+
+  (3, 1, 'Leg press', 3, '12', 'Amplitude confortável, sem tirar a lombar do encosto.'),
+  (3, 2, 'Puxada alta', 3, '12', 'Puxe a barra até a altura do queixo.'),
+  (3, 3, 'Supino na máquina', 3, '12', 'Empurre sem travar os cotovelos.'),
+  (3, 4, 'Cadeira flexora', 3, '12', 'Movimento controlado na volta.'),
+  (3, 5, 'Remada baixa', 3, '12', 'Peito aberto, ombros longe das orelhas.'),
+  (3, 6, 'Prancha', 3, '20 s', 'Abdômen firme, respire normalmente.'),
+
+  (4, 1, 'Agachamento goblet com halter', 4, '10', 'Halter junto ao peito, desça até onde for confortável.'),
+  (4, 2, 'Supino com halteres', 4, '10', 'Desça os halteres até a linha do peito.'),
+  (4, 3, 'Remada curvada com barra', 4, '10', 'Tronco inclinado e coluna neutra.'),
+  (4, 4, 'Levantamento terra romeno', 3, '10', 'Joelhos levemente flexionados, quadril vai para trás.'),
+  (4, 5, 'Desenvolvimento com halteres', 3, '10', 'Sem arquear a lombar.'),
+  (4, 6, 'Elevação pélvica com barra', 3, '12', 'Pausa de 1 segundo no topo.'),
+  (4, 7, 'Prancha', 3, '45 s', 'Corpo em linha reta.');

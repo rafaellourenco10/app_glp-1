@@ -1005,6 +1005,162 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Histórico de pesagens'**
   String get weightHistory;
+
+  /// No description provided for @levelBeginner.
+  ///
+  /// In pt, this message translates to:
+  /// **'Iniciante'**
+  String get levelBeginner;
+
+  /// No description provided for @levelIntermediate.
+  ///
+  /// In pt, this message translates to:
+  /// **'Intermediário'**
+  String get levelIntermediate;
+
+  /// No description provided for @locHome.
+  ///
+  /// In pt, this message translates to:
+  /// **'Em casa'**
+  String get locHome;
+
+  /// No description provided for @locGym.
+  ///
+  /// In pt, this message translates to:
+  /// **'Academia'**
+  String get locGym;
+
+  /// No description provided for @workoutsTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Preserve sua massa muscular'**
+  String get workoutsTitle;
+
+  /// No description provided for @workoutsSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treinos de força simples, em casa ou na academia.'**
+  String get workoutsSubtitle;
+
+  /// No description provided for @workoutsWeeklyGoal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Meta semanal de força'**
+  String get workoutsWeeklyGoal;
+
+  /// No description provided for @workoutsSessionsDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'sessões nesta semana'**
+  String get workoutsSessionsDone;
+
+  /// No description provided for @workoutsGoalOk.
+  ///
+  /// In pt, this message translates to:
+  /// **'Meta da semana (2 a 3 sessões) alcançada.'**
+  String get workoutsGoalOk;
+
+  /// No description provided for @workoutsGoalHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Meta: 2 a 3 sessões por semana.'**
+  String get workoutsGoalHint;
+
+  /// No description provided for @workoutsWhy.
+  ///
+  /// In pt, this message translates to:
+  /// **'A perda de peso pode incluir massa muscular. Exercícios de força ajudam a preservá-la. Respeite seus limites e, em caso de dúvida, fale com seu profissional de saúde.'**
+  String get workoutsWhy;
+
+  /// No description provided for @workoutsTemplates.
+  ///
+  /// In pt, this message translates to:
+  /// **'Modelos de treino'**
+  String get workoutsTemplates;
+
+  /// No description provided for @workoutsExerciseCount.
+  ///
+  /// In pt, this message translates to:
+  /// **'{n} exercícios'**
+  String workoutsExerciseCount(int n);
+
+  /// No description provided for @workoutsStart.
+  ///
+  /// In pt, this message translates to:
+  /// **'Iniciar treino'**
+  String get workoutsStart;
+
+  /// No description provided for @workoutsHistory.
+  ///
+  /// In pt, this message translates to:
+  /// **'Histórico recente'**
+  String get workoutsHistory;
+
+  /// No description provided for @workoutsHistoryEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhuma sessão registrada ainda.'**
+  String get workoutsHistoryEmpty;
+
+  /// No description provided for @workoutsExercisesDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'{n, plural, =1{1 exercício feito} other{{n} exercícios feitos}}'**
+  String workoutsExercisesDone(int n);
+
+  /// No description provided for @workoutsSafety.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hidrate-se e respeite seus limites de energia durante a atividade.'**
+  String get workoutsSafety;
+
+  /// No description provided for @sessionTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treino em andamento'**
+  String get sessionTitle;
+
+  /// No description provided for @sessionProgress.
+  ///
+  /// In pt, this message translates to:
+  /// **'{done} de {total} exercícios concluídos'**
+  String sessionProgress(int done, int total);
+
+  /// No description provided for @setsReps.
+  ///
+  /// In pt, this message translates to:
+  /// **'{sets} séries × {reps}'**
+  String setsReps(int sets, String reps);
+
+  /// No description provided for @sessionSafety.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sentiu tontura, náusea ou mal-estar? Pare e descanse. Se persistir, procure sua equipe de saúde.'**
+  String get sessionSafety;
+
+  /// No description provided for @sessionFinish.
+  ///
+  /// In pt, this message translates to:
+  /// **'Finalizar treino'**
+  String get sessionFinish;
+
+  /// No description provided for @sessionDiscard.
+  ///
+  /// In pt, this message translates to:
+  /// **'Descartar treino'**
+  String get sessionDiscard;
+
+  /// No description provided for @homeWorkoutTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Treino sugerido de hoje'**
+  String get homeWorkoutTitle;
+
+  /// No description provided for @homeWorkoutStart.
+  ///
+  /// In pt, this message translates to:
+  /// **'Começar'**
+  String get homeWorkoutStart;
 }
 
 class _AppLocalizationsDelegate
