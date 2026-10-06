@@ -55,7 +55,10 @@ flutter pub get
 flutter run --dart-define-from-file=.env
 ```
 
-No VS Code, basta apertar **F5**: o `.vscode/launch.json` já passa o `.env`. Sem o `.env`, o app abre numa tela avisando que a configuração está ausente.
+No VS Code, escolha a configuração **Supabase (.env)** e aperte **F5**.
+
+**Modo demonstração:** sem `.env` (ou com a configuração **Demo (sem Supabase)**, que é a padrão do F5), o app abre direto, sem login e
+sem Supabase. Os dados ficam só em memória e somem ao fechar o app (ver `lib/demo.dart`). O lembrete local de dose funciona de verdade nesse modo.
 
 As chaves são lidas em tempo de compilação (`String.fromEnvironment`). O `.env` está no `.gitignore`.
 
