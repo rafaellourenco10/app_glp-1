@@ -307,4 +307,100 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get siteArm => 'Braço';
+
+  @override
+  String get proteinSubtitle => 'Preservação de massa magra e saciedade';
+
+  @override
+  String proteinGoal(String g) {
+    return 'Meta $g g';
+  }
+
+  @override
+  String proteinRemaining(String g) {
+    return 'Faltam $g g';
+  }
+
+  @override
+  String get proteinGoalReached => 'Meta do dia atingida';
+
+  @override
+  String proteinOfGoal(String consumed, String goal) {
+    return '$consumed g de $goal g';
+  }
+
+  @override
+  String get proteinWeekly => 'Consistência semanal';
+
+  @override
+  String proteinWeeklyAvg(String avg, String goal) {
+    return 'Média de $avg g/dia • Meta $goal g';
+  }
+
+  @override
+  String get proteinFoods => 'Alimentos';
+
+  @override
+  String get proteinManual => 'Registro manual';
+
+  @override
+  String get proteinSearch => 'Buscar alimento (ex: frango, iogurte)';
+
+  @override
+  String foodPortion(String portion, String g) {
+    return '$portion • $g g proteína';
+  }
+
+  @override
+  String proteinAddFood(String name) {
+    return 'Adicionar $name';
+  }
+
+  @override
+  String get proteinManualName => 'Nome do alimento';
+
+  @override
+  String get proteinManualGrams => 'Proteína (gramas)';
+
+  @override
+  String get proteinAdd => 'Adicionar';
+
+  @override
+  String get proteinToday => 'Registrados hoje';
+
+  @override
+  String proteinTodayCount(int count, String g) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count itens',
+      one: '1 item',
+    );
+    return '$_temp0 • $g g';
+  }
+
+  @override
+  String get proteinTodayEmpty => 'Nada registrado hoje.';
+
+  @override
+  String portions(String n) {
+    return '$n porção(ões)';
+  }
+
+  @override
+  String get lessPortion => 'Menos meia porção';
+
+  @override
+  String get morePortion => 'Mais meia porção';
+
+  @override
+  String get homeProteinTitle => 'Meta de proteína';
+
+  @override
+  String homeProteinPct(int pct) {
+    return '$pct% hoje';
+  }
+
+  @override
+  String get homeProteinLog => 'Registrar proteína';
 }

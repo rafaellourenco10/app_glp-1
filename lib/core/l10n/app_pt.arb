@@ -144,5 +144,104 @@
   "doseConfirm": "Confirmar registro",
   "siteAbdomen": "Abdômen",
   "siteThigh": "Coxa",
-  "siteArm": "Braço"
+  "siteArm": "Braço",
+  "proteinSubtitle": "Preservação de massa magra e saciedade",
+  "proteinGoal": "Meta {g} g",
+  "@proteinGoal": {
+    "placeholders": {
+      "g": {
+        "type": "String"
+      }
+    }
+  },
+  "proteinRemaining": "Faltam {g} g",
+  "@proteinRemaining": {
+    "placeholders": {
+      "g": {
+        "type": "String"
+      }
+    }
+  },
+  "proteinGoalReached": "Meta do dia atingida",
+  "proteinOfGoal": "{consumed} g de {goal} g",
+  "@proteinOfGoal": {
+    "placeholders": {
+      "consumed": {
+        "type": "String"
+      },
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
+  "proteinWeekly": "Consistência semanal",
+  "proteinWeeklyAvg": "Média de {avg} g/dia • Meta {goal} g",
+  "@proteinWeeklyAvg": {
+    "placeholders": {
+      "avg": {
+        "type": "String"
+      },
+      "goal": {
+        "type": "String"
+      }
+    }
+  },
+  "proteinFoods": "Alimentos",
+  "proteinManual": "Registro manual",
+  "proteinSearch": "Buscar alimento (ex: frango, iogurte)",
+  "foodPortion": "{portion} • {g} g proteína",
+  "@foodPortion": {
+    "placeholders": {
+      "portion": {
+        "type": "String"
+      },
+      "g": {
+        "type": "String"
+      }
+    }
+  },
+  "proteinAddFood": "Adicionar {name}",
+  "@proteinAddFood": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "proteinManualName": "Nome do alimento",
+  "proteinManualGrams": "Proteína (gramas)",
+  "proteinAdd": "Adicionar",
+  "proteinToday": "Registrados hoje",
+  "proteinTodayCount": "{count, plural, =1{1 item} other{{count} itens}} • {g} g",
+  "@proteinTodayCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "g": {
+        "type": "String"
+      }
+    }
+  },
+  "proteinTodayEmpty": "Nada registrado hoje.",
+  "portions": "{n} porção(ões)",
+  "@portions": {
+    "placeholders": {
+      "n": {
+        "type": "String"
+      }
+    }
+  },
+  "lessPortion": "Menos meia porção",
+  "morePortion": "Mais meia porção",
+  "homeProteinTitle": "Meta de proteína",
+  "homeProteinPct": "{pct}% hoje",
+  "@homeProteinPct": {
+    "placeholders": {
+      "pct": {
+        "type": "int"
+      }
+    }
+  },
+  "homeProteinLog": "Registrar proteína"
 }

@@ -633,6 +633,150 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Braço'**
   String get siteArm;
+
+  /// No description provided for @proteinSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Preservação de massa magra e saciedade'**
+  String get proteinSubtitle;
+
+  /// No description provided for @proteinGoal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Meta {g} g'**
+  String proteinGoal(String g);
+
+  /// No description provided for @proteinRemaining.
+  ///
+  /// In pt, this message translates to:
+  /// **'Faltam {g} g'**
+  String proteinRemaining(String g);
+
+  /// No description provided for @proteinGoalReached.
+  ///
+  /// In pt, this message translates to:
+  /// **'Meta do dia atingida'**
+  String get proteinGoalReached;
+
+  /// No description provided for @proteinOfGoal.
+  ///
+  /// In pt, this message translates to:
+  /// **'{consumed} g de {goal} g'**
+  String proteinOfGoal(String consumed, String goal);
+
+  /// No description provided for @proteinWeekly.
+  ///
+  /// In pt, this message translates to:
+  /// **'Consistência semanal'**
+  String get proteinWeekly;
+
+  /// No description provided for @proteinWeeklyAvg.
+  ///
+  /// In pt, this message translates to:
+  /// **'Média de {avg} g/dia • Meta {goal} g'**
+  String proteinWeeklyAvg(String avg, String goal);
+
+  /// No description provided for @proteinFoods.
+  ///
+  /// In pt, this message translates to:
+  /// **'Alimentos'**
+  String get proteinFoods;
+
+  /// No description provided for @proteinManual.
+  ///
+  /// In pt, this message translates to:
+  /// **'Registro manual'**
+  String get proteinManual;
+
+  /// No description provided for @proteinSearch.
+  ///
+  /// In pt, this message translates to:
+  /// **'Buscar alimento (ex: frango, iogurte)'**
+  String get proteinSearch;
+
+  /// No description provided for @foodPortion.
+  ///
+  /// In pt, this message translates to:
+  /// **'{portion} • {g} g proteína'**
+  String foodPortion(String portion, String g);
+
+  /// No description provided for @proteinAddFood.
+  ///
+  /// In pt, this message translates to:
+  /// **'Adicionar {name}'**
+  String proteinAddFood(String name);
+
+  /// No description provided for @proteinManualName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nome do alimento'**
+  String get proteinManualName;
+
+  /// No description provided for @proteinManualGrams.
+  ///
+  /// In pt, this message translates to:
+  /// **'Proteína (gramas)'**
+  String get proteinManualGrams;
+
+  /// No description provided for @proteinAdd.
+  ///
+  /// In pt, this message translates to:
+  /// **'Adicionar'**
+  String get proteinAdd;
+
+  /// No description provided for @proteinToday.
+  ///
+  /// In pt, this message translates to:
+  /// **'Registrados hoje'**
+  String get proteinToday;
+
+  /// No description provided for @proteinTodayCount.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 item} other{{count} itens}} • {g} g'**
+  String proteinTodayCount(int count, String g);
+
+  /// No description provided for @proteinTodayEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nada registrado hoje.'**
+  String get proteinTodayEmpty;
+
+  /// No description provided for @portions.
+  ///
+  /// In pt, this message translates to:
+  /// **'{n} porção(ões)'**
+  String portions(String n);
+
+  /// No description provided for @lessPortion.
+  ///
+  /// In pt, this message translates to:
+  /// **'Menos meia porção'**
+  String get lessPortion;
+
+  /// No description provided for @morePortion.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mais meia porção'**
+  String get morePortion;
+
+  /// No description provided for @homeProteinTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Meta de proteína'**
+  String get homeProteinTitle;
+
+  /// No description provided for @homeProteinPct.
+  ///
+  /// In pt, this message translates to:
+  /// **'{pct}% hoje'**
+  String homeProteinPct(int pct);
+
+  /// No description provided for @homeProteinLog.
+  ///
+  /// In pt, this message translates to:
+  /// **'Registrar proteína'**
+  String get homeProteinLog;
 }
 
 class _AppLocalizationsDelegate
